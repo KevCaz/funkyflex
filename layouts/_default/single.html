@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div class="article-meta">
+  <h1><span class="title">{{ .Title }}</span></h1>
+  <h3><span class="subtitle">{{ .Params.subtitle }}</span></h3>
+  {{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
+  {{ if .Params.date }}<h3 class="date" style="font-size: 1.25em;">{{ .Date.Format "January 2, 2006" }}</h2>{{ end }}
+
+  <!-- tags -->
+  {{ if .Params.tags }}
+    <p class="tags">
+      <i class="fa fa-tags" aria-hidden="true"></i> &nbsp;
+      {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}"> <kbd class="item-tag">{{ . }}</kbd></a>
+      {{ end }}
+    </p>
+  {{ end }}
+  <!-- END tags -->
+
+  <!-- topics -->
+  {{ if .Params.topics }}
+    <p class="tags">
+      <i class="fa fa-bullhorn" aria-hidden="true"></i> &nbsp;
+      {{ range .Params.topics }}
+        <a href="/topics/{{ . | urlize }}"> <kbd class="item-tag">{{ . }}</kbd></a>
+      {{ end }}
+    </p>
+  {{ end }}
+  <!-- END topics -->
+
+  <br>
+
+</div>
+
+{{ .Content }}
+
+{{ end }}

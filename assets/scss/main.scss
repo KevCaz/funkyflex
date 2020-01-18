@@ -1,0 +1,60 @@
+@import "libs/vars.scss";
+@import "libs/fonts.scss";
+@import "libs/sidebar-primary.scss";
+@import "libs/sidebar-secondary.scss";
+@import "libs/main-content.scss";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: $ftsz4;
+    line-height: 1.25;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: $ftsz6;
+    color: $prim2;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+blockquote {
+    border-left: solid 15px $prim5;
+    padding-left: 20px;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+code { 
+    font-family: 'Fira Code', monospace; 
+    font-size: $ftsz6;
+}
+
+.chroma {
+    line-height: 1.4;
+    border-radius: 16px;
+    code {
+        border-radius: 0px;
+        margin-right: 40px;
+    }
+}
+
+
+
+
+
+
+.page {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+
+img {
+    padding: 5px;
+    width: 150px;
+}

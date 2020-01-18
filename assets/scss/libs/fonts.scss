@@ -1,0 +1,19 @@
+// Fira Sans and Fira Code
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,200i 300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css');
+
+// Font Awesome 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
+
+// Academicons 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css');
+
+// Extra 
+// https://www.dafont.com/fr/avengeance-mightiest-avenger.font
+@font-face {
+    font-family: 'AMA';
+    src: url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.eot') format('embedded-opentype'),
+      url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.woff2') format('woff2'),
+      url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.woff') format('woff'),
+      url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.ttf') format('truetype')
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "head.html" . }}
+
+<body>
+    {{ partial "header.html" . }}
+
+    <div class="page">
+
+        <div class="ctn-sidebar-primary">
+            <div class="ctt-sidebar-primary">
+                {{ partial "sidebar-primary.html" . }}
+            
+                <div class="footer">
+                    {{ partial "footer.html" . }}
+                </div>
+
+                <a href="https://osm.org/go/ZXn_SNy3d--">University of Guelph</a>
+                
+            </div>
+        </div>
+
+        <div class="ctn-main-content">
+
+
+            <div class="ctt-main-content">
+
+                {{ .Content }}
+
+                <i class='fab fa-creative-commons-zero'></i>
+                <i class="fab fa-facebook"></i>
+                <i class="ai ai-google-scholar-square"></i>
+
+                <br> <br>
+
+                <img src="https://via.placeholder.com/150" alt="">
+                <img src="https://via.placeholder.com/150x300" alt="">
+                <img src="https://via.placeholder.com/150x200" alt="">
+                <img src="https://via.placeholder.com/150" alt="">
+                <img src="https://via.placeholder.com/150x200" alt="">
+                <img src="https://via.placeholder.com/150" alt="">
+                <img src="https://via.placeholder.com/150x300" alt="">
+                <img src="https://via.placeholder.com/150x200" alt="">
+                <img src="https://via.placeholder.com/150" alt="">
+                <img src="https://via.placeholder.com/150x200" alt="">
+
+            </div>
+
+        </div>
+
+        <div class="ctn-sidebar-secondary">
+        
+            {{ partial "sidebar-secondary.html" . }}
+
+        </div>
+
+        
+
+    </div>
+
+
+</body>
+
+</html>

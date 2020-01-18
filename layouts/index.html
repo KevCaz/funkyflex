@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "head.html" . }}
+
+<body>
+    {{ partial "header.html" . }}
+
+    <div class="page">
+
+        <div class="ctn-sidebar-primary">
+            <div class="ctt-sidebar-primary">
+                {{ partial "sidebar-primary.html" . }}
+
+                <div class="footer">
+                    {{ partial "footer.html" . }}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ctn-main-content">
+
+            <div class="ctt-main-content">
+                <div class="title"> {{ .Title }}</div>
+                {{ .Content }}
+            </div>
+
+        </div>
+
+        <div class="ctn-sidebar-secondary">
+            <div class="ctt-sidebar-secondary">
+                {{ partial "sidebar-secondary.html" . }}
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

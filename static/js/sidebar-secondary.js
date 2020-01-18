@@ -1,0 +1,13 @@
+var x = document.querySelectorAll(".ctt-main-content h1, .ctt-main-content h2");
+var i;
+
+
+for (i = 0; i < x.length; i++) {
+  id = "sidebar_secondary_id_" + i;
+  x[i].id = id;
+  if (x[i].tagName == "H1") {
+    document.write("<h1> <a href='#" + id + "'>"+ x[i].innerHTML + "</a></h1>");
+  } else if (x[i].tagName == "H2") {
+    document.write("<h2> <a href='#" + id + "'>"+ x[i].innerHTML + "</a></h2>");
+  }
+}

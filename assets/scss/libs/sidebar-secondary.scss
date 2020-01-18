@@ -1,0 +1,57 @@
+.ctn-sidebar-secondary {
+    width: 15%;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: $seco5;
+    text-align: center;
+    color: $prim2;
+
+    @media #{$large-low} {
+        width: 20%;
+    }
+
+    @media #{$medium-low} {
+        width: 100%;
+        display: none;
+    }
+
+}
+
+.ctt-sidebar-secondary {
+    width: 15%;
+    display: flex;
+    flex-flow: row wrap;
+    position: fixed;
+    top: 25px;
+    right: 0;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            color: $prim5;
+        }
+        i, ai {
+            text-decoration: inherit;
+            text-decoration-color: inherit;
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+
+    h1 {
+        font-size: $ftsz4;
+        margin: 20px 0px 2px 0px;
+        width: 100%;
+    }
+    h2 {
+        font-size: $ftsz6;
+        margin: 6px 0px 1px 0px;
+        width: 100%;
+    }
+
+    @media #{$large-low} {
+        width: 20%;
+    }
+}

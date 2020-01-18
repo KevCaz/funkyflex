@@ -1,0 +1,30 @@
+.ctn-main-content {
+    width: 65%;
+    display: flex;
+    background-color: $seco5;
+    @media #{$large-low} {
+        width: 60%;
+    }
+    @media #{$medium-low} {
+        width: 70%;
+    }
+    @media #{$small-low} {
+        width: 100%;
+    }
+}
+
+.ctt-main-content {
+    padding: 10px 20px 10px 40px;
+
+    .title  {
+        padding: 15px;
+        text-align: center;
+        font-size: $ftsz1;
+        font-family: "AMA";
+    }
+
+    h1 {
+        font-size: $ftsz2;
+    }
+
+}

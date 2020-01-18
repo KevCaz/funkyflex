@@ -1,0 +1,57 @@
+.ctn-sidebar-primary {
+    display: flex;
+    flex-flow: row wrap;
+    width: 20%;
+    background-color: $prim2;
+    min-height: 100vh;
+    color: $seco4;
+
+    @media #{$medium-low} {
+        width: 30%;
+    }
+
+    @media #{$small-low} {
+        width: 100%;
+        min-height: 10vh;
+        text-align: center;
+    }
+
+}
+
+
+.ctt-sidebar-primary {
+    width:100%;
+    padding: 10px 5px 10px 16px;
+    h1 {
+        font-family: "AMA";
+        font-size: $ftsz2;
+    }
+    i, ai {
+        font-size: inherit;
+        color: $prim5;
+    }
+    a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: $prim5;
+        &:hover {
+            color: darken($seco4, 30);
+        }
+        i, ai {
+            text-decoration: inherit;
+            text-decoration-color: inherit;
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}
+
+
+.footer  {
+    font-size: $ftsz7;
+    i, ai {
+        font-size: inherit;
+        color: $seco4;
+    }
+}
