@@ -6,10 +6,10 @@
 
         {{ if .HasChildren }}
             <h2> 
-                <button onclick="dropDown()">{{ .Name | markdownify }}</button>
+                <button onclick="dropDown('{{  .Identifier }}')">{{ .Name | markdownify }}</button>
                 <!-- <a href="" onclick="dropDown()"> {{ .Name | markdownify }} </a> -->
             </h2>
-            <div id="dropdown">
+            <div class="dropdown" id="dropdown-{{  .Identifier }}">
                 {{ range .Children }}
                     <h3>
                         <a href="{{ .URL }}"> {{ .Name | markdownify }} </a>
