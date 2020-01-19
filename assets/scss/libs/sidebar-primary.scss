@@ -35,13 +35,21 @@
         text-decoration: underline;
         text-decoration-color: $prim5;
         &:hover {
-            color: darken($seco4, 30);
+            color: $thir4;
         }
         i, ai {
             text-decoration: inherit;
             text-decoration-color: inherit;
             &:hover {
                 color: inherit;
+            }
+        }
+    }
+    h2 {
+        a {
+            text-decoration: none;
+            &:hover {
+                color: $prim5;
             }
         }
     }

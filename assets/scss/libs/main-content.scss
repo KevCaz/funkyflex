@@ -1,6 +1,7 @@
 .ctn-main-content {
     width: 65%;
     display: flex;
+    flex-flow: row wrap;
     background-color: $seco5;
     @media #{$large-low} {
         width: 60%;
@@ -14,10 +15,20 @@
 }
 
 .ctt-main-content {
+    width: 100%;
     padding: 10px 20px 10px 40px;
+    color: $prim2;
 
-    .title  {
-        padding: 15px;
+    a {
+        color: $thir4;
+        text-decoration: none;
+        &:hover {
+            color: $prim5
+        }
+    }
+
+    #title  {
+        padding: 10px;
         text-align: center;
         font-size: $ftsz1;
         font-family: "AMA";
@@ -27,4 +38,77 @@
         font-size: $ftsz2;
     }
 
+    .listings {
+        font-weight: 500;
+        color: $prim2;
+        li {
+            font-size: $ftsz5;
+          }
+        ul {
+            list-style-type: none;
+            .date {
+                font-size: $ftsz8;
+            }
+        }
+        a {
+            color: $prim2;
+            text-decoration: none;
+            &:hover {
+                color: $prim5;
+            }
+        }
+    }
+
+
+
+    kbd {
+        font-family: "Fira Code";
+        color: $prim1;
+        border-radius: 6px;
+        border: 4px solid $prim1;
+    }
+
+    .article-meta {
+        h1 {
+            margin: 24px;
+        }
+        h2 {
+            margin: 12px;
+        }
+        h3 {
+            margin: 12px;
+        }
+        text-align: center;
+        .tags {
+            font-size: $ftsz8;
+            padding: 12px;
+            color: $prim2;
+            kbd {                                              
+                background-color: $prim2;
+                color: $prim5;
+                padding: 7px;
+                border-radius: 10px;
+                border: 0px;
+            }
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: $prim5;
+                }
+            }
+        } 
+    }
+     
+
+    
+    .footnotes {
+        font-size: $ftsz9;
+    }
+
+    .bottom-spacing {
+        min-height: 100px;
+    }
+
 }
+

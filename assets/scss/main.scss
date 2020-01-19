@@ -34,10 +34,9 @@ code {
 }
 
 .chroma {
+    padding: 10px;
     line-height: 1.4;
-    border-radius: 16px;
     code {
-        border-radius: 0px;
         margin-right: 40px;
     }
 }
