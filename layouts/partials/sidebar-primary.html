@@ -1,12 +1,29 @@
 <h1>KevCaz</h1>
 
 {{ if .Site.Menus.main }} 
-    
+
     {{ range sort .Site.Menus.main }}
-        <h2> 
-            <a href = "{{ .URL }}"> {{ .Name | markdownify }} </a>
-        </h2>
+
+        {{ if .HasChildren }}
+            <h2> 
+                <button onclick="dropDown()">{{ .Name | markdownify }}</button>
+                <!-- <a href="" onclick="dropDown()"> {{ .Name | markdownify }} </a> -->
+            </h2>
+            <div id="dropdown">
+                {{ range .Children }}
+                    <h3>
+                        <a href="{{ .URL }}"> {{ .Name | markdownify }} </a>
+                    </h3>
+                {{ end }}
+            </div>
+        {{ else }}
+            <h2> 
+                <a href="{{ .URL }}"> {{ .Name | markdownify }} </a>
+            </h2>
+        {{ end }}
+
     {{ end }}
 
 {{ end }}
 
+<script src="/js/sidebar-primary-dropdown.js"></script>

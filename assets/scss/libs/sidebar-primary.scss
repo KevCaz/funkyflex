@@ -1,6 +1,6 @@
 .ctn-sidebar-primary {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     width: 20%;
     background-color: $prim2;
     min-height: 100vh;
@@ -11,16 +11,23 @@
     }
 
     @media #{$small-low} {
+        padding: 0px;
         width: 100%;
-        min-height: 10vh;
         text-align: center;
+        min-height: 8vh;
     }
 
 }
 
 
 .ctt-sidebar-primary {
-    width:100%;
+    width: 100%;
+    @media #{$small-low} {
+        padding: 0px;
+        .footer {
+            display: none;
+        }
+    }
     padding: 10px 5px 10px 16px;
     h1 {
         font-family: "AMA";
@@ -45,18 +52,37 @@
             }
         }
     }
-    h2 {
-        a {
+    button {
+        font: inherit;
+        background-color: inherit;
+        color: inherit;
+        border: 0px;
+        padding: inherit;
+    }
+    h2, h3 {
+        button, a {
             text-decoration: none;
             &:hover {
                 color: $prim5;
             }
         }
     }
+    h3 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+    }
+
+    #dropdown {
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
 }
 
 
 .footer  {
+    margin-top: 100px;
     font-size: $ftsz7;
     i, ai {
         font-size: inherit;
