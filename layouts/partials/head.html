@@ -2,20 +2,24 @@
    <!-- title -->
    <title>{{ .Site.Title }}</title>
 
+  {{ if or .Params.math .Site.Params.math }}
+    {{ partial "math.html" . }}
+  {{ end }}
+
+  <!-- chroma -->
+  <link rel="stylesheet" href="/css/chroma_syntax.css">
 
    <!-- main.scss see https://jamstatic.fr/2018/07/21/hugo-asset-pipeline/ -->
    {{ if .Site.IsServer }}
-   {{ $opts := (dict "targetPath" "css/main.css" "enableSourceMap" true) }}
-   {{ $styles := resources.Get "scss/main.scss" | toCSS $opts }}
-   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    {{ $opts := (dict "targetPath" "css/main.css" "enableSourceMap" true) }}
+    {{ $styles := resources.Get "scss/main.scss" | toCSS $opts }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
    {{ else }}
-   {{ $opts := (dict "targetPath" "css/main.css") }}
-   {{ $styles := resources.Get "scss/main.scss" | toCSS $opts | minify | fingerprint }}
-   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    {{ $opts := (dict "targetPath" "css/main.css") }}
+    {{ $styles := resources.Get "scss/main.scss" | toCSS $opts | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
    {{ end }}
 
-   <!-- chroma -->
-  <link rel="stylesheet" href="/css/chroma_syntax.css">
 
   <!-- JS -->
   <script src="/js/sidebar-primary-dropdown.js"></script>
@@ -24,21 +28,7 @@
     function scrollToBottom() {
         scrollingElement.scrollTop = scrollingElement.scrollHeight;
     }
-</script>
-
-   {{ if .Site.GoogleAnalytics }}
-   <!-- Global Site Tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}"></script>
-   <script>
-     window.dataLayer = window.dataLayer || [];
-
-     function gtag() {
-       dataLayer.push(arguments)
-     };
-     gtag('js', new Date());
-     gtag('config', '{{ .Site.GoogleAnalytics }}');
-   </script>
-   {{ end }}
+  </script>
 
 
  </head>
