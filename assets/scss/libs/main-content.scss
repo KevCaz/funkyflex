@@ -63,24 +63,25 @@
 
     .article-meta {
         h1 {
-            margin: 24px;
+            margin: 2vh;
         }
         h2 {
-            margin: 12px;
+            margin: 1vh;
         }
         h3 {
-            margin: 12px;
+            margin: 1vh;
         }
         text-align: center;
         .tags {
-            font-size: $ftsz8;
-            padding: 12px;
+            margin-top: 12px;
+            font-size: $ftsz9;
+            padding: 6px;
             color: $prim2;
             kbd {                                              
                 background-color: $prim2;
                 color: $prim5;
-                padding: 7px;
-                border-radius: 10px;
+                padding: 6px;
+                border-radius: 12px;
                 border: 0px;
             }
             a {
