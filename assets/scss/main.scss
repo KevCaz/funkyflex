@@ -10,13 +10,12 @@ body {
     padding: 0px;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    font-size: $ftsz4;
+    font-size: 1em;
     line-height: 1.25;
     scroll-behavior: smooth;
 }
 
 p {
-    font-size: $ftsz6;
     color: $prim2;
     font-family: inherit;
     font-weight: inherit;
@@ -29,9 +28,22 @@ blockquote {
     font-weight: 500;
 }
 
+mark {
+    background-color: $seco4;
+}
+
+
+kbd {
+    font-family: "Fira Code";
+    color: $prim1;
+    border-radius: 6px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 4px solid $prim1;
+}
+
 code { 
     font-family: 'Fira Code', monospace; 
-    font-size: $ftsz6;
 }
 
 .chroma {
@@ -43,10 +55,6 @@ code {
 }
 
 
-
-
-
-
 .page {
     display: flex;
     flex-flow: row wrap;
@@ -54,7 +62,26 @@ code {
 }
 
 
-img {
-    padding: 5px;
-    width: 150px;
+img, iframe, video { 
+    max-width: 100%; 
 }
+
+/* Table */
+table {
+  margin: auto;
+  border-top: 6px solid $prim2;
+  border-bottom: 6px solid $prim2;
+}
+th, td { 
+    padding: 6px; 
+}
+thead, tfoot {
+    background: $seco4;
+}
+th {
+    border-bottom: 3px solid $prim2;
+}
+tr:nth-child(even) { 
+    background: $thir5; 
+}
+

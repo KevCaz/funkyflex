@@ -22,16 +22,11 @@
 
 .ctt-sidebar-primary {
     width: 100%;
+    font-size: $ftsz7;
     @media #{$small-low} {
         padding: 4px;
         h1 {
             margin-bottom: 2vh !important;
-        }
-        h2 {
-            font-size: $ftsz5;
-        } 
-        h3 {
-            font-size: $ftsz6;
         }
         .primary-sidebar-menu {
             display: none;
@@ -40,7 +35,6 @@
     padding: 10px 5px 10px 16px;
     h1 {
         font-family: "AMA";
-        font-size: $ftsz2;
         margin-bottom: 4vh;
     }
     i, ai {
