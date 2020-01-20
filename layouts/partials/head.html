@@ -17,6 +17,14 @@
    <!-- chroma -->
   <link rel="stylesheet" href="/css/chroma_syntax.css">
 
+  <!-- JS -->
+  <script src="/js/sidebar-primary-dropdown.js"></script>
+  <script>
+    scrollingElement = (document.scrollingElement || document.body)
+    function scrollToBottom() {
+        scrollingElement.scrollTop = scrollingElement.scrollHeight;
+    }
+</script>
 
    {{ if .Site.GoogleAnalytics }}
    <!-- Global Site Tag (gtag.js) - Google Analytics -->

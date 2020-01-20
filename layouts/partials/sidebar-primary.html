@@ -1,12 +1,18 @@
-<h1>KevCaz</h1>
+<h1> {{ .Site.Title }} </h1>
 
+<div class="primary-sidebar-premenu">
+    <h2> <i class='fas fa-align-center'></i> <button onclick="dropDown('p-s-menu')"> Menu </button> </h2>
+</div>
+
+<div class="primary-sidebar-menu" id="p-s-menu">
+    
 {{ if .Site.Menus.main }} 
 
     {{ range sort .Site.Menus.main }}
 
         {{ if .HasChildren }}
             <h2> 
-                <button onclick="dropDown('{{  .Identifier }}')">{{ .Name | markdownify }}</button>
+                <button onclick="dropDown('dropdown-{{  .Identifier }}')">{{ .Name | markdownify }}</button>
                 <!-- <a href="" onclick="dropDown()"> {{ .Name | markdownify }} </a> -->
             </h2>
             <div class="dropdown" id="dropdown-{{  .Identifier }}">
@@ -26,4 +32,5 @@
 
 {{ end }}
 
-<script src="/js/sidebar-primary-dropdown.js"></script>
+</div>
+

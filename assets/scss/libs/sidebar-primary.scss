@@ -23,8 +23,17 @@
 .ctt-sidebar-primary {
     width: 100%;
     @media #{$small-low} {
-        padding: 0px;
-        .footer {
+        padding: 4px;
+        h1 {
+            margin-bottom: 2vh !important;
+        }
+        h2 {
+            font-size: $ftsz5;
+        } 
+        h3 {
+            font-size: $ftsz6;
+        }
+        .primary-sidebar-menu {
             display: none;
         }
     }
@@ -32,6 +41,7 @@
     h1 {
         font-family: "AMA";
         font-size: $ftsz2;
+        margin-bottom: 4vh;
     }
     i, ai {
         font-size: inherit;
@@ -78,19 +88,31 @@
         padding-bottom: 0px;
         padding-left: 30px;
     }
-
     .dropdown {
         width: 100%;
         display: none;
+    }
+    .primary-sidebar-premenu {
+        display: none;
+        @media #{$small-low} {
+            display: block;
+        }
+    }
+    #current-class {
+        color: $prim5;
     }
 }
 
 
 .footer  {
-    padding-top: 10vh;
+    padding-top: 12vh;
     font-size: $ftsz7;
     i, ai {
         font-size: inherit;
         color: $seco4;
     }
+    @media #{$small-low} {
+        display: none;
+    }
+  ;
 }
