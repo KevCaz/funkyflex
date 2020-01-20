@@ -7,23 +7,43 @@
 <div class="primary-sidebar-menu" id="p-s-menu">
     
 {{ if .Site.Menus.main }} 
-
     {{ range sort .Site.Menus.main }}
-
         {{ if .HasChildren }}
-            <h2> 
-                <button onclick="dropDown('dropdown-{{  .Identifier }}')">{{ .Name | markdownify }}</button>
-                <!-- <a href="" onclick="dropDown()"> {{ .Name | markdownify }} </a> -->
+
+            {{ $i := false }}
+            {{ range .Children }}
+                {{ if eq (relURL $.Permalink) (relURL .URL) }} 
+                    {{ $i = true }}
+                {{ end }}
+            {{ end }}
+
+            {{ if $i }}
+                <h2 id="current-dropdown">
+            {{ else }} 
+                <h2>
+            {{ end }}
+            <button onclick="dropDown('dropdown-{{  .Identifier }}')">
+                {{ .Name | markdownify }}
+            </button>
             </h2>
+
             <div class="dropdown" id="dropdown-{{  .Identifier }}">
                 {{ range .Children }}
-                    <h3>
+                    {{ if eq (relURL $.Permalink) (relURL .URL) }} 
+                        <h3 id="current">
+                    {{ else }}
+                        <h3>
+                    {{ end }}
                         <a href="{{ .URL }}"> {{ .Name | markdownify }} </a>
                     </h3>
                 {{ end }}
             </div>
         {{ else }}
-            <h2> 
+            {{ if eq (relURL $.Permalink) (relURL .URL) }} 
+                <h2 id="current">
+            {{ else }}
+                <h2>
+            {{ end }}
                 <a href="{{ .URL }}"> {{ .Name | markdownify }} </a>
             </h2>
         {{ end }}

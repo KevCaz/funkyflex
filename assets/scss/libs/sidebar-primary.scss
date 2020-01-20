@@ -98,8 +98,21 @@
             display: block;
         }
     }
-    #current-class {
+    #current {
         color: $prim5;
+        &:after {
+            font-family: "Font Awesome 5 Free";
+            content: "\f0a5";
+            padding-left: 6px;
+        }
+    }
+    #current-dropdown {
+        color: $prim5;
+        &:after {
+            font-family: "Font Awesome 5 Free";
+            content: "\f0a7";
+            padding-left: 6px;
+        }
     }
 }
 
