@@ -13,7 +13,7 @@
     @media #{$small-low} {
         width: 100%;
         text-align: center;
-        min-height: 15vh;
+        min-height: 16vh;
         display: flex;
         flex-direction: column;
     }
@@ -36,7 +36,7 @@
     }
     h1 {
         font-family: "AMA";
-        margin-bottom: 4vh;
+        margin-bottom: 2vh;
         padding: 4px;
     }
     i, ai {

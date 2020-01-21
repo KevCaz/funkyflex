@@ -11,14 +11,14 @@
   </div>
 
   <div class="listings">
-    <ul class="fa-ul">
+    <ol reversed> 
       {{ range (where .Data.Pages "Section" "!=" "") }}
-      <li><span class="fa-li"><i class="fas fas fa-chevron-circle-right"></i></span>
-        <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+      <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <span class="date">{{ .Date.Format "2006-01-01" }}</span>
       </li>
       {{ end }}
-    </ul>
+    </ol>
   </div>
  
 {{ end }}

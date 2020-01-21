@@ -13,7 +13,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        min-height: 85vh;
+        min-height: 84vh;
         padding: 0px;
     }
 }
@@ -52,10 +52,20 @@
     .listings {
         font-weight: 500;
         color: $prim2;
-        li {
+        .date {
+            color: $prim1;
+            font-size: $ftsz10;
+        }
+        ol li {
             font-size: $ftsz7;
+            color: $prim3;
+            padding: 2px;
           }
-        ul, ol {
+        ol li::marker {
+            font-family: "AMA";
+            font-size: $ftsz9;
+        }
+        ul {
             list-style-type: none;
             .date {
                 font-size: $ftsz10;
@@ -77,16 +87,13 @@
         h1 {
             margin: 2vh 0vh 2vh 0vh;
         }
-        h2 {
-            margin: 1vh 0vh 1vh 0vh;
-        }
-        h3 {
+        h2, h3 {
             margin: 1vh 0vh 1vh 0vh;
         }
         text-align: center;
         .tags {
             margin-top: 12px;
-            font-size: $ftsz9;
+            font-size: $ftsz10;
             padding: 6px;
             color: $prim2;
             kbd {                                              
