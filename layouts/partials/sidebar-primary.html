@@ -17,11 +17,7 @@
                 {{ end }}
             {{ end }}
 
-            {{ if $i }}
-                <h2 id="current-dropdown">
-            {{ else }} 
-                <h2>
-            {{ end }}
+            {{ if $i }}<h2 id="current-dropdown">{{ else }}<h2>{{ end }}
             <button onclick="dropDown('dropdown-{{  .Identifier }}')">
                 {{ .Name | markdownify }}
             </button>
@@ -30,21 +26,20 @@
             <div class="dropdown" id="dropdown-{{  .Identifier }}">
                 {{ range .Children }}
                     {{ if eq (relURL $.Permalink) (relURL .URL) }} 
-                        <h3 id="current">
+                    <h3 id="current">
                     {{ else }}
-                        <h3>
+                    <h3>
                     {{ end }}
-                        <a href="{{ .URL }}"> {{ .Name | markdownify }} </a>
-                    </h3>
+                    <a href="{{ .URL }}"> {{ .Name | markdownify }} </a></h3>
                 {{ end }}
             </div>
         {{ else }}
             {{ if eq (relURL $.Permalink) (relURL .URL) }} 
-                <h2 id="current">
+            <h2 id="current">
             {{ else }}
-                <h2>
+            <h2>
             {{ end }}
-                <a href="{{ .URL }}"> {{ .Name | markdownify }} </a>
+            <a href="{{ .URL }}"> {{ .Name | markdownify }} </a>
             </h2>
         {{ end }}
 
