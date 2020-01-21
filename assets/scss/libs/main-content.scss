@@ -11,15 +11,24 @@
     }
     @media #{$small-low} {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 85vh;
+        padding: 0px;
     }
 }
 
 .ctt-main-content {
     width: 100%;
-    padding: 10px 20px 10px 40px;
+    padding: 10px 0px 10px 0px;
     margin-bottom: 4vh;
     font-size: $ftsz7;
     color: $prim2;
+
+    @media #{$small-low} {
+        flex: 1 0 auto; 
+    }
+
 
     a {
         color: $thir4;
@@ -30,7 +39,7 @@
     }
 
     #title  {
-        padding: 10px;
+        padding: 6px;
         text-align: center;
         font-size: $ftsz1;
         font-family: "AMA";
@@ -62,14 +71,17 @@
     }
 
     .article-meta {
+        #title {
+            margin: 2vh 0vh 2vh 0vh;
+        }
         h1 {
-            margin: 2vh;
+            margin: 2vh 0vh 2vh 0vh;
         }
         h2 {
-            margin: 1vh;
+            margin: 1vh 0vh 1vh 0vh;
         }
         h3 {
-            margin: 1vh;
+            margin: 1vh 0vh 1vh 0vh;
         }
         text-align: center;
         .tags {
@@ -93,6 +105,10 @@
             }
         } 
     }
+
+    .article-main, .listings {
+        padding: 4px 18px 6px 24px;
+    }
      
     .footnotes {
         font-size: $ftsz10;
@@ -103,15 +119,14 @@
 
 .footer2 {
     display: none;
+    font-size: $ftsz8;
     @media #{$small-low} {
         display: block;
+        width: 100%;
+        padding: 20px 0px 20px 0px;
     }
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 100%;
     text-align: center;
+    width: 100%;
     background-color: $prim2;
     color: $seco4;
     ai, i {
