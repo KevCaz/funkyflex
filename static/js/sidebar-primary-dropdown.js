@@ -7,7 +7,3 @@ function dropDown(x) {
       x.style.display = "none";
     }
   }
-
-function changeAfter(x) {
-  var x = document.getElementById(x)
-}

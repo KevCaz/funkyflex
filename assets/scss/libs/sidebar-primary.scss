@@ -86,6 +86,10 @@
         width: 100%;
         display: none;
     }
+    .dropdown-cuurent {
+        width: 100%;
+        display: block;
+    }
     .primary-sidebar-premenu {
         display: none;
         @media #{$small-low} {
