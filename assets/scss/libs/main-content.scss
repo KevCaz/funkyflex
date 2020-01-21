@@ -55,7 +55,7 @@
         li {
             font-size: $ftsz7;
           }
-        ul {
+        ul, ol {
             list-style-type: none;
             .date {
                 font-size: $ftsz10;
@@ -106,7 +106,7 @@
         } 
     }
 
-    .article-main, .listings {
+    .article-meta, .article-main, .listings {
         padding: 4px 18px 6px 24px;
     }
      
