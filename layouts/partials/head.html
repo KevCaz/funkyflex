@@ -20,15 +20,11 @@
     <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
    {{ end }}
 
+  
+  {{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
+  {{ end }}
 
-  <!-- JS -->
-  <script src="/js/sidebar-primary-dropdown.js"></script>
-  <script>
-    scrollingElement = (document.scrollingElement || document.body)
-    function scrollToBottom() {
-        scrollingElement.scrollTop = scrollingElement.scrollHeight;
-    }
-  </script>
 
 
  </head>

@@ -1,0 +1,15 @@
+<!-- custom JS -->
+{{ range .Site.Params.custom_js }}
+  <script src="{{ "/js/" | relURL }}{{ . }}"></script>
+{{ end }}
+
+
+<!-- JS -->
+<script src="/js/sidebar-primary-dropdown.js"></script>
+
+<script>
+    scrollingElement = (document.scrollingElement || document.body)
+    function scrollToBottom() {
+        scrollingElement.scrollTop = scrollingElement.scrollHeight;
+    }
+</script>
