@@ -33,7 +33,7 @@ mark {
 
 
 kbd {
-    font-family: "Fira Code";
+    font-family: "Fira Code", monospace;;
     color: $prim1;
     border-radius: 6px;
     padding-left: 2px;
@@ -42,7 +42,12 @@ kbd {
 }
 
 code { 
-    font-family: 'Fira Code', monospace; 
+    font-family: 'Fira Code', monospace;
+    color: $prim3;
+    background-color: $thir5;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 12px;
 }
 
 .highlight {
