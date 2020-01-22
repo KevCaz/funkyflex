@@ -6,9 +6,6 @@
     {{ partial "math.html" . }}
   {{ end }}
 
-  <!-- chroma -->
-  <link rel="stylesheet" href="/css/chroma_syntax.css">
-
    <!-- main.scss see https://jamstatic.fr/2018/07/21/hugo-asset-pipeline/ -->
    {{ if .Site.IsServer }}
     {{ $opts := (dict "targetPath" "css/main.css" "enableSourceMap" true) }}

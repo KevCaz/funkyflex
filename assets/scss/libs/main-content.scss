@@ -20,13 +20,17 @@
 
 .ctt-main-content {
     width: 100%;
-    padding: 10px 0px 10px 0px;
+    padding: 12px 0px 12px 0px;
     margin-bottom: 4vh;
     font-size: $ftsz7;
     color: $prim2;
 
     @media #{$small-low} {
         flex: 1 0 auto; 
+    }
+
+    p {
+        margin: 6px 0px 6px 0px;
     }
 
 
@@ -81,10 +85,7 @@
     }
 
     .article-meta {
-        #title {
-            margin: 2vh 0vh 2vh 0vh;
-        }
-        h1 {
+        #title h1 {
             margin: 2vh 0vh 2vh 0vh;
         }
         h2, h3 {
