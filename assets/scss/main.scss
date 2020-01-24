@@ -48,7 +48,7 @@ kbd {
     border: 4px solid $prim1;
 }
 
-p code { 
+li code, p code { 
     font-family: 'Fira Code', monospace;
     font-size: .92em;
     color: $prim3;

@@ -14,7 +14,7 @@
     <ol reversed> 
       {{ range (where .Data.Pages "Section" "!=" "") }}
       <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
         <span class="date">{{ .Date.Format "2006-01-01" }}</span>
       </li>
       {{ end }}
