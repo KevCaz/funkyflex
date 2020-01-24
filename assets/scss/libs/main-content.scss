@@ -4,7 +4,7 @@
     flex-flow: row wrap;
     background-color: $seco5;
     @media #{$large-low} {
-        width: 60%;
+        width: 62%;
     }
     @media #{$medium-low} {
         width: 70%;
@@ -147,5 +147,8 @@
         &:hover {
             color: $prim5;
         }
+    }
+    #hr-footer {
+        display: none;
     }
 }
