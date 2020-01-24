@@ -43,11 +43,13 @@ kbd {
 
 p code { 
     font-family: 'Fira Code', monospace;
+    font-size: .95em;
     color: $prim3;
     background-color: $thir5;
     padding-left: 6px;
     padding-right: 6px;
     border-radius: 12px;
+    border: solid 1px $seco3;
 }
 
 .highlight {

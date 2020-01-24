@@ -4,7 +4,7 @@
 
 <body>
     {{ partial "header.html" . }}
-
+    
     <div class="page">
 
         <div class="ctn-sidebar-primary">
@@ -22,8 +22,13 @@
 
             <div class="ctt-main-content">
                 <h1 id="title"> {{ .Title }}</h1>
-                {{ .Content }}
 
+                <div class="ctt-main-content">
+                     <div class="article-main">
+                        {{ .Content }}
+                    </div>
+                </div>
+   
                 <h3> <i class="fa fa-code" aria-hidden="true"></i>&nbsp;Latest <a href="/posts/">Post</a> </h3>
                 {{ range where .Site.Pages.ByDate.Reverse ".Type" "==" "post" | first 1 }}
                     <h4 style="font-weight:bolder;">
@@ -37,8 +42,6 @@
                 {{ partial "footer.html" . }}
             </div>
 
-            
-
         </div>
 
         <div class="ctn-sidebar-secondary">
@@ -49,6 +52,8 @@
 
     </div>
 
+    {{ partial "js.html" . }}
+    
 </body>
 
 </html>

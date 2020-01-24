@@ -33,7 +33,6 @@
         margin: 1vh 0px 1vh 0px;
     }
 
-
     a {
         color: $thir4;
         text-decoration: none;
@@ -65,7 +64,7 @@
             font-size: $ftsz10;
         }
         ol li {
-            font-size: $ftsz7;
+            font-size: $ftsz8;
             color: $prim3;
             padding: 2px;
           }
@@ -75,9 +74,6 @@
         }
         ul {
             list-style-type: none;
-            .date {
-                font-size: $ftsz10;
-            }
         }
         a {
             color: $prim2;
