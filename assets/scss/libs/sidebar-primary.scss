@@ -37,7 +37,7 @@
     h1 {
         font-family: "AMA";
         margin-bottom: 2vh;
-        padding: 4px;
+        padding: 6px;
     }
     i, ai {
         font-size: inherit;
@@ -94,7 +94,7 @@
         display: block;
     }
     .primary-sidebar-menu {
-        padding: 4px 4px 2px 12px;
+        padding: 4px 4px 2px 18px;
     }
     .primary-sidebar-premenu {
         display: none;
@@ -124,7 +124,8 @@
 
 
 .footer  {
-    padding-top: 12vh;
+    padding: 12vh 6px 6px 12px;
+    // padding:left
     font-size: $ftsz8;
     i, ai {
         font-size: inherit;

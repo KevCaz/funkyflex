@@ -1,2 +1,9 @@
-{{ .Site.Params.footer | markdownify  }}
+<div class="social-media-banner">
+    {{ partial "media-social-banner.html" . }}    
+</div>
+
+<div class="footer-custom">
+    {{ .Site.Params.footer | markdownify }}
+</div>
+
 

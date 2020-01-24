@@ -14,6 +14,12 @@ body {
     scroll-behavior: smooth;
 }
 
+.page {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
 p {
     color: $prim2;
     font-family: inherit;
@@ -62,12 +68,14 @@ p code {
     }
 }
 
-
-.page {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+.social-media-banner {
+    font-size: $ftsz6;
+    margin-bottom: .6vh;
+    a {
+        color: $seco4;
+    }
 }
+
 
 
 img, iframe, video { 
