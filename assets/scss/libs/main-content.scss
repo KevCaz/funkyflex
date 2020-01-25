@@ -66,12 +66,12 @@
         }
         ol li {
             font-size: $ftsz8;
-            color: $prim3;
             padding: 2px;
           }
         ol li::marker {
             font-family: "AMA";
             font-size: $ftsz9;
+            color: $prim3;
         }
         ul {
             list-style-type: none;
