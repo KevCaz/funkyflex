@@ -103,3 +103,18 @@ tr:nth-child(even) {
     background: $thir5; 
 }
 
+
+.pubs {
+    a {
+        color: $prim4 !important;
+        &:hover {
+            color: $prim5 !important;
+        }
+        i, ai {
+            color: $prim4;
+            &:hover {
+                color: $prim5;
+            }
+        }
+    }
+}
