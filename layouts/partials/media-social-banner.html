@@ -35,7 +35,7 @@
 <a href="https://scholar.google.ca/citations?user={{ . }}"><i class='ai ai-google-scholar-square'></i></a>
 {{ end }}
 {{ with .Site.Params.researchgate }}
-<a href="https://www.researchgate.net/profile/{{ . }}"><i class='ai ai-researchgate-square'></i></a>
+<a href="https://www.researchgate.net/profile/{{ . }}"><i class='fab fa-researchgate'></i></a>
 {{ end }}
 {{ with .Site.Params.publons }}
 <a href="https://publons.com/author/{{ . }}"><i class='ai ai-publons-square'></i></a>
@@ -43,5 +43,3 @@
 {{ with .Site.Params.impactstory }}
 <a href="https://profiles.impactstory.org/u/{{ . }}"><i class='ai ai-impactstory-square'></i></a>
 {{ end }}
-
-

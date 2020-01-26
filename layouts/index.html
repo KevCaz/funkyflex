@@ -23,19 +23,13 @@
             <div class="ctt-main-content">
                 <h1 id="title"> {{ .Title }}</h1>
 
-                <div class="listings pubs">
-                    <ol>
-                        <li><a href="cool">cool</a></li>
-                    </ol>
-                </div>
-
                 <div class="ctt-main-content">
-                     <div class="article-main">
+                     <div class="article-main">        
                         {{ .Content }}
                     </div>
                 </div>
    
-                <h3> <i class="fa fa-code" aria-hidden="true"></i>&nbsp;Latest <a href="/posts/">Post</a> </h3>
+                <h3> <i class="fas fa-code" aria-hidden="true"></i>&nbsp;Latest <a href="/posts/">Post</a> </h3>
                 {{ range where .Site.Pages.ByDate.Reverse ".Type" "==" "post" | first 1 }}
                     <h4 style="font-weight:bolder;">
                         <a href="{{ .RelPermalink }}">{{ .Title }}</a>

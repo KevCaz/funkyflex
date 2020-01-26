@@ -38,7 +38,6 @@ mark {
     background-color: $seco4;
 }
 
-
 kbd {
     font-family: "Fira Code", monospace;;
     color: $prim1;
@@ -47,6 +46,22 @@ kbd {
     padding-right: 4px;
     border: 4px solid $prim1;
 }
+
+.ctn-progress-bar {
+    color: $prim2;
+    background-color: $prim2;
+    margin: 1vh;
+    height: 40px;
+    .ctt-progress-bar {
+        height: 40px;
+        border: 0px;
+        background-color: $prim3;
+        text-align: center;
+        padding: 0px;
+        font-size: $ftsz10;
+    }
+}
+
 
 li code, p code { 
     font-family: 'Fira Code', monospace;
