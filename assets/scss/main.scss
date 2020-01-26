@@ -27,6 +27,19 @@ p {
     font-weight: inherit;
 }
 
+h1{
+    margin: 72px 0vh 36px 0vh;
+}
+h2 {
+    margin: 48px 0vh 24px 0vh;
+}
+h3 {
+    margin: 36px 0vh 18px 0vh;
+}
+h4, h5 {
+    margin: 24px 0vh 12px 0vh;
+}
+
 blockquote {
     border-left: solid 15px $prim5;
     padding-left: 20px;
@@ -51,9 +64,10 @@ kbd {
     color: $prim2;
     background-color: $prim2;
     margin: 1vh;
-    height: 40px;
+    height: 36px;
+    font-size: 27px;
     .ctt-progress-bar {
-        height: 40px;
+        height: 36px;
         border: 0px;
         background-color: $prim3;
         text-align: center;
