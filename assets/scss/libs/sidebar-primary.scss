@@ -128,9 +128,11 @@
 .footer  {
     padding: 6vh 6px 6px 12px;
     font-size: $ftsz8;
-    i, ai {
-        font-size: inherit;
-        color: $seco4;
+    .social-media-banner {
+        i, ai {
+            font-size: $ftsz5;
+            color: $seco4;
+        }
     }
     @media #{$small-low} {
         display: none;
