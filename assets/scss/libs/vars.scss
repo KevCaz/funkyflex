@@ -1,15 +1,15 @@
 // Font-size 
-$ftsz1: 3,2em;
-$ftsz2: 2.8em;
-$ftsz3: 2.4em;
-$ftsz4: 2em;
-$ftsz5: 1.8em;
-$ftsz6: 1.6em;
-$ftsz7: 1.4em;
-$ftsz8: 1.2em;
-$ftsz9: 1.1em;
-$ftsz10: 1em;
-$ftsz11: .8em;
+$ftsz1: 2.4em;
+$ftsz2: 2em;
+$ftsz3: 1.8em;
+$ftsz4: 1.6em;
+$ftsz5: 1.4em;
+$ftsz6: 1.2em;
+$ftsz7: 1.1em;
+$ftsz8: 1em;
+$ftsz9: .9em;
+$ftsz10: .8em;
+$ftsz11: .7em;
 $ftsz12: .5em;
  
 // Colors 
@@ -28,6 +28,6 @@ $thir4: darken($seco4, 25);
 $thir5: lighten($prim5, 20);
 
 // responsive
-$large-low: "only screen and (max-width: 2000px)";
-$medium-low: "only screen and (max-width: 1600px)";
-$small-low: "only screen and (max-width: 1200px)";
+$large-low: "only screen and (max-width: 1800px)";
+$medium-low: "only screen and (max-width: 1200px)";
+$small-low: "only screen and (max-width: 900px)";
