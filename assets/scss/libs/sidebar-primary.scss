@@ -25,7 +25,7 @@
     width: 100%;
     font-size: $ftsz7;
     @media #{$small-low} {
-        padding: 10px 0px 10px 0px;
+        padding: 6px 0px 6px 0px;
         h1 {
             margin: 1vh 0vh 1vh 0vh;
         }
@@ -42,6 +42,8 @@
     i, ai {
         font-size: inherit;
         color: $prim5;
+        padding-right: 3px;
+        padding-left: 3px;
     }
     a {
         color: inherit;
