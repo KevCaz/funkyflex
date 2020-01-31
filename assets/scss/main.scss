@@ -13,6 +13,12 @@ body {
     scroll-behavior: smooth;
 }
 
+@media #{$small-low} {
+    body {
+        font-size: $ftsz6;
+    }
+}
+
 .page {
     display: flex;
     flex-flow: row wrap;
