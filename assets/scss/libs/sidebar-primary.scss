@@ -17,7 +17,7 @@
     @media #{$small-low} {
         width: 100%;
         text-align: center;
-        min-height: 16vh;
+        min-height: 12vh;
         display: flex;
         flex-direction: column;
     }
@@ -31,6 +31,7 @@
     @media #{$small-low} {
         h1 {
             margin: 1rem 0rem 1rem 0rem;
+            font-size: $ftsz1;
         }
         .primary-sidebar-menu {
             display: none;
@@ -38,8 +39,8 @@
     }
     h1 {
         font-family: "AMA";
-        margin-bottom: 2rem;
-        padding: .8rem;
+        margin-bottom: 1.2rem;
+        padding-top: .4rem;
     }
     i, ai {
         font-size: inherit;
@@ -100,7 +101,9 @@
     }
     .primary-sidebar-premenu {
         display: none;
-        font-size: $ftsz7;
+        h2 {
+            font-size: $ftsz2;
+        }
         @media #{$small-low} {
             display: block;
         }
@@ -137,3 +140,5 @@
         background-color: $seco4;
     }
 }
+
+

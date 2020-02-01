@@ -5,12 +5,12 @@
 @import "libs/main-content.scss";
 
 html {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 @media #{$small-low} {
     html {
-        font-size: 1.2em;
+        font-size: 1.4rem;
     }
 }
 
@@ -39,7 +39,11 @@ p {
 }
 
 ai, i {
-    margin: auto;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    // &:after {
+    //     content: "\00a0";
+    // }
 }
 
 
@@ -105,16 +109,15 @@ kbd {
 .ctn-progress-bar {
     color: $prim2;
     background-color: $prim2;
-    margin: 1vh;
-    height: 24px;
-    font-size: 24px;
+    margin: .8rem 2rem .8rem 2em;
+    height: 1.8rem;
     .ctt-progress-bar {
-        height: 24px;
+        height: 1.8rem;
         border: 0px;
         background-color: $prim3;
         text-align: center;
-        padding: 0px;
-        font-size: $ftsz10;
+        padding: 0rem;
+        font-size: 1.5rem;
     }
 }
 
