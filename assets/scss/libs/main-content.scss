@@ -70,7 +70,7 @@
 
     .article-meta {
         #title h1 {
-            margin: 1.2rem 0vh 1.2rem 0vh;
+            margin: 1.2rem 0rem 1.2rem 0rem;
         }
         text-align: center;
         .tags {
@@ -103,7 +103,7 @@
         margin-top: 3rem;
         font-size: $ftsz9;
         p {
-        font-size: $ftsz9;
+            font-size: $ftsz9;
         }
     }
 
@@ -112,7 +112,7 @@
 
 .footer2 {
     display: none;
-    font-size: $ftsz8;
+    font-size: $ftsz6;
     @media #{$small-low} {
         display: block;
         width: 100%;

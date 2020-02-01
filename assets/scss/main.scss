@@ -188,3 +188,12 @@ tr:nth-child(even) {
         }
     }
 }
+
+
+.social-media-banner {
+    padding: .2rem 0rem .4rem 0rem;
+    i, ai {
+        font-size: $ftsz3;
+        color: $seco4;
+    }
+}

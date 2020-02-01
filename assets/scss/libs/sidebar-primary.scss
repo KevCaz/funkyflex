@@ -130,14 +130,7 @@
 
 .footer  {
     padding: 6vh .5rem .5rem .8rem;
-    font-size: $ftsz8;
-    .social-media-banner {
-        padding: .2rem 0rem .4rem 0rem;
-        i, ai {
-            font-size: $ftsz3;
-            color: $seco4;
-        }
-    }
+    font-size: $ftsz7;
     @media #{$small-low} {
         display: none;
     }
