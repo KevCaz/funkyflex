@@ -29,13 +29,11 @@
     width: 100%;
 
     @media #{$small-low} {
-        padding: .8rem 0rem .8rem 0rem;
         h1 {
-            margin: 1rem 0vh 1rem 0vh;
+            margin: 1rem 0rem 1rem 0rem;
         }
         .primary-sidebar-menu {
             display: none;
-            padding: .2rem;
         }
     }
     h1 {
@@ -46,8 +44,6 @@
     i, ai {
         font-size: inherit;
         color: $prim5;
-        padding-right: .25rem;
-        padding-left: .25rem;
     }
     a {
         color: inherit;
@@ -100,7 +96,7 @@
         display: block;
     }
     .primary-sidebar-menu {
-        padding: .4rem .4rem .4rem .8rem;
+        padding: 0rem .2rem 0rem .6rem;
     }
     .primary-sidebar-premenu {
         display: none;

@@ -4,7 +4,7 @@
     flex-flow: row wrap;
     background-color: $seco5;
     @media #{$large-low} {
-        width: 60%;
+        width: 59%;
     }
     @media #{$medium-low} {
         width: 70%;
@@ -20,7 +20,6 @@
 
 .ctt-main-content {
     width: 100%;
-    padding: .4rem 0px .4rem 0px;
     margin-bottom: 2vh;
     font-size: $ftsz7;
     color: $prim2;
