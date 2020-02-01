@@ -6,10 +6,6 @@
     text-align: center;
     color: $prim2;
 
-    @media #{$large-low} {
-        width: 18%;
-    }
-
     @media #{$medium-low} {
         width: 100%;
         display: none;
@@ -18,13 +14,13 @@
 }
 
 .ctt-sidebar-secondary {
-    width: 12%;
+    width: 15%;
     display: flex;
     flex-flow: row wrap;
     position: fixed;
-    top: 25px;
+    top: 1rem;
     right: 0;
-    padding: 0px;
+    padding: 0rem;
 
     a {
         color: inherit;
@@ -42,17 +38,14 @@
     }
 
     h1 {
-        font-size: $ftsz4;
-        margin: 20px 0px 2px 0px;
+        font-size: $ftsz5;
+        margin: .4rem 0rem .18rem 0rem;
         width: 100%;
     }
     h2 {
-        font-size: $ftsz6;
-        margin: 6px 0px 1px 0px;
+        font-size: $ftsz8;
+        margin: .2rem 0rem .12rem 0rem;
         width: 100%;
     }
 
-    @media #{$large-low} {
-        width: 18%;
-    }
 }

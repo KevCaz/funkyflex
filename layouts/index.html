@@ -29,12 +29,6 @@
                     </div>
                 </div>
    
-                <h3> <i class="fas fa-code" aria-hidden="true"></i>&nbsp;Latest <a href="/posts/">Post</a> </h3>
-                {{ range where .Site.Pages.ByDate.Reverse ".Type" "==" "post" | first 1 }}
-                    <h4 style="font-weight:bolder;">
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </h4>
-                {{ end }}
 
             </div>
 

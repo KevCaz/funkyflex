@@ -6,6 +6,10 @@
     min-height: 100vh;
     color: $seco4;
 
+    @media #{$large-low} {
+        width: 25%;
+    }
+
     @media #{$medium-low} {
         width: 30%;
     }
@@ -23,27 +27,27 @@
 
 .ctt-sidebar-primary {
     width: 100%;
-    font-size: $ftsz7;
+
     @media #{$small-low} {
-        padding: 6px 0px 6px 0px;
+        padding: .8rem 0rem .8rem 0rem;
         h1 {
-            margin: 1vh 0vh 1vh 0vh;
+            margin: 1rem 0vh 1rem 0vh;
         }
         .primary-sidebar-menu {
             display: none;
-            padding: 4px;
+            padding: .2rem;
         }
     }
     h1 {
         font-family: "AMA";
-        margin-bottom: 1vh;
-        padding: 6px;
+        margin-bottom: 2rem;
+        padding: .8rem;
     }
     i, ai {
         font-size: inherit;
         color: $prim5;
-        padding-right: 3px;
-        padding-left: 3px;
+        padding-right: .25rem;
+        padding-left: .25rem;
     }
     a {
         color: inherit;
@@ -69,11 +73,9 @@
         padding: inherit;  
     }
     h2, h3 {
-        margin: 1vh 0vh 2vh 0vh;
         button, a {
             color: inherit;
             text-decoration: none;
-            outline: 2;
             &:hover {
                 color: $prim5;
             }
@@ -82,10 +84,12 @@
             color: $prim5;
         }
     }
+    h2 {
+        font-size: $ftsz3;
+    }
     h3 {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-left: 30px;
+        font-size: $ftsz6;
+        padding-left: 1rem;
     }
     .dropdown {
         width: 100%;
@@ -96,7 +100,7 @@
         display: block;
     }
     .primary-sidebar-menu {
-        padding: 4px 4px 2px 18px;
+        padding: .4rem .4rem .4rem .8rem;
     }
     .primary-sidebar-premenu {
         display: none;
@@ -104,14 +108,13 @@
         @media #{$small-low} {
             display: block;
         }
-        margin: 1vh 0vh 1vh 0vh;
     }
     #current {
         color: $prim5;
         &:after {
             font-family: "Font Awesome 5 Free";
             content: "\f0a5";
-            padding-left: 6px;
+            padding-left: .8rem;
         }
     }
     #current-dropdown {
@@ -119,18 +122,19 @@
         &:after {
             font-family: "Font Awesome 5 Free";
             content: "\f0a7";
-            padding-left: 6px;
+            padding-left: .8rem;
         }
     }
 }
 
 
 .footer  {
-    padding: 6vh 6px 6px 12px;
+    padding: 6vh .5rem .5rem .8rem;
     font-size: $ftsz8;
     .social-media-banner {
+        padding: .2rem 0rem .4rem 0rem;
         i, ai {
-            font-size: $ftsz5;
+            font-size: $ftsz3;
             color: $seco4;
         }
     }

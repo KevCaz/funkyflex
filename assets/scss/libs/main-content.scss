@@ -4,7 +4,7 @@
     flex-flow: row wrap;
     background-color: $seco5;
     @media #{$large-low} {
-        width: 62%;
+        width: 60%;
     }
     @media #{$medium-low} {
         width: 70%;
@@ -20,17 +20,13 @@
 
 .ctt-main-content {
     width: 100%;
-    padding: 6px 0px 6px 0px;
+    padding: .4rem 0px .4rem 0px;
     margin-bottom: 2vh;
     font-size: $ftsz7;
     color: $prim2;
 
     @media #{$small-low} {
         flex: 1 0 auto; 
-    }
-
-    p {
-        margin: 1vh 0px 1vh 0px;
     }
 
     a {
@@ -41,40 +37,22 @@
         }
     }
 
-    #title  {
-        padding: 6px;
-        text-align: center;
-        font-family: "AMA";
-        code {
-            font-family: "Fira Code", monospace;
-            color: $prim3;
-        }
-        i, ai {
-            padding-left: 4px;
-            padding-right: 4px;
-        }
-        
-    }
-
-    h1 {
-        font-size: $ftsz2;
-    }
 
     .listings {
-        font-weight: 500;
+        font-weight: 400;
         color: $prim2;
         .date {
             color: $prim1;
             font-size: $ftsz10;
-            padding-left: 12px;
+            padding-left: .3rem;
         }
         ol li {
-            font-size: $ftsz8;
-            padding: 2px;
+            font-size: $ftsz7;
+            padding: .1rem;
           }
         ol li::marker {
             font-family: "AMA";
-            font-size: $ftsz9;
+            font-size: $ftsz7;
             color: $prim3;
         }
         ul {
@@ -86,25 +64,25 @@
             &:hover {
                 color: $prim5;
             }
+            font-weight: 500;
         }
     }
 
     .article-meta {
         #title h1 {
-            margin: 2vh 0vh 2vh 0vh;
+            margin: 1.2rem 0vh 1.2rem 0vh;
         }
         text-align: center;
         .tags {
-            margin-top: 12px;
-            font-size: $ftsz10;
-            padding: 6px;
+            margin-top: .8rem;
+            font-size: $ftsz9;
             color: $prim2;
             kbd {                                              
                 background-color: $prim2;
                 color: $prim5;
-                padding: 6px;
-                border-radius: 12px;
-                border: 0px;
+                padding: .4rem;
+                border-radius: .6rem;
+                border: 0rem;
             }
             a {
                 text-decoration: none;
@@ -114,6 +92,7 @@
                 }
             }
         } 
+        margin-bottom: 1rem;
     }
 
     .article-meta, .article-main, .listings {
@@ -121,7 +100,11 @@
     }
      
     .footnotes {
-        font-size: $ftsz10;
+        margin-top: 3rem;
+        font-size: $ftsz9;
+        p {
+        font-size: $ftsz9;
+        }
     }
 
 }

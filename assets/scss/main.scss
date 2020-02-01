@@ -4,18 +4,22 @@
 @import "libs/sidebar-secondary.scss";
 @import "libs/main-content.scss";
 
+html {
+    font-size: 1em;
+}
+
 body {
     margin: 0px;
     padding: 0px;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    line-height: 1.20;
+    line-height: 1.25;
     scroll-behavior: smooth;
 }
 
 @media #{$small-low} {
-    body {
-        font-size: $ftsz6;
+    html {
+        font-size: 1.2em;
     }
 }
 
@@ -26,30 +30,57 @@ body {
 }
 
 p {
-    font-size: $ftsz9;
+    font-size: $ftsz7;
     color: $prim2;
     font-family: inherit;
     font-weight: inherit;
+    margin: 1.2rem 0rem .6rem 0rem;
 }
 
+
 h1{
-    margin: 36px 0vh 18px 0vh;
+    margin: 2.2rem 0rem 1.6rem 0rem;
+    font-size: $ftsz2;
 }
 h2 {
-    margin: 30px 0vh 15px 0vh;
+    margin: 1.8rem 0rem 1.2rem 0rem;
+    font-size: $ftsz3;
 }
 h3 {
-    margin: 24px 0vh 12px 0vh;
+    margin: 1.6rem 0rem 1.1em 0rem;
+    font-size: $ftsz4;
 }
-h4, h5 {
-    margin: 12px 0vh 6px 0vh;
+h4 {
+    margin: 1.4rem 0vh 1rem 0rem;
+    font-size: $ftsz5;
+}
+h5 {
+    margin: 1.2rem 0vh .8rem 0rem;
+    font-size: $ftsz6;
+}
+h6 {
+    margin: 1rem 0vh .6rem 0rem;
+    font-size: $ftsz7;
+}
+
+
+#title  {
+    padding: .4rem;
+    text-align: center;
+    font-family: "AMA";
+    font-size: $ftsz1;
+    code {
+        font-family: "Fira Code", monospace;
+        color: $prim3;
+    }  
 }
 
 blockquote {
-    border-left: solid 15px $prim5;
-    padding-left: 20px;
+    border-left: solid .6rem $prim5;
+    padding: .1rem .1rem .1rem 1rem;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 300;
+    background-color: $thir5;
 }
 
 mark {
@@ -57,8 +88,8 @@ mark {
 }
 
 i, ai {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: .25rem;
+    padding-right: .25rem;
 }
 
 kbd {
@@ -89,19 +120,19 @@ kbd {
 
 li code, p code { 
     font-family: 'Fira Code', monospace;
-    font-size: .92em;
+    font-size: .95rem;
     color: $prim3;
     background-color: $thir5;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 12px;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    border-radius: .5rem;
     border: solid 1px $seco3;
 }
 
 .highlight {
-    line-height: 1.5;
+    line-height: 1.4;
     code {
-        margin-right: 36px;
+        margin-right: 2.4rem;
     }
     pre {
         margin: 1vh 0vh 1vh 0vh;
@@ -120,7 +151,7 @@ li code, p code {
 
 img, iframe, video { 
     max-width: 100%; 
-    margin: 4px 0px 4px 0px ;
+    margin: .2rem 0rem .2rem 0rem;
 }
 
 /* Table */
@@ -130,7 +161,7 @@ table {
   border-bottom: 4px solid $prim2;
 }
 th, td { 
-    padding: 6px; 
+    padding: .3rem; 
 }
 thead, tfoot {
     background: $seco4;
