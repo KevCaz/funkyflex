@@ -8,19 +8,20 @@ html {
     font-size: 1em;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    line-height: 1.25;
-    scroll-behavior: smooth;
-}
-
 @media #{$small-low} {
     html {
         font-size: 1.2em;
     }
+}
+
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    scroll-behavior: smooth;
 }
 
 .page {
@@ -35,6 +36,10 @@ p {
     font-family: inherit;
     font-weight: inherit;
     margin: 1.2rem 0rem .6rem 0rem;
+}
+
+ai, i {
+    margin: auto;
 }
 
 
