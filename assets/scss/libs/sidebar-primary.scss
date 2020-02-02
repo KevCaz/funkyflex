@@ -42,8 +42,18 @@
         margin-bottom: 1.2rem;
         padding-top: .4rem;
     }
+    h2 {
+        margin-top: 1.4rem;
+        margin-bottom: 1rem;
+        font-size: $ftsz4;
+    }
+    h3 {
+        margin-top: .8rem;
+        margin-bottom: 1rem;
+        font-size: $ftsz6;
+        padding-left: 1rem;
+    }
     i, ai {
-        font-size: inherit;
         color: $prim5;
     }
     a {
@@ -81,17 +91,6 @@
             color: $prim5;
         }
     }
-    h2 {
-        margin-top: 1.4rem;
-        margin-bottom: 1rem;
-        font-size: $ftsz4;
-    }
-    h3 {
-        margin-top: .8rem;
-        margin-bottom: 1rem;
-        font-size: $ftsz6;
-        padding-left: 1rem;
-    }
     .dropdown {
         width: 100%;
         display: none;
@@ -101,7 +100,7 @@
         display: block;
     }
     .primary-sidebar-menu {
-        padding: 0rem .2rem 0rem .6rem;
+        padding: 0rem .4rem 0rem .4rem;
     }
     .primary-sidebar-premenu {
         display: none;
@@ -132,7 +131,7 @@
 
 
 .footer  {
-    padding: 6vh .5rem .5rem .8rem;
+    padding: 5vh .5rem .5rem .8rem;
     font-size: $ftsz7;
     @media #{$small-low} {
         display: none;

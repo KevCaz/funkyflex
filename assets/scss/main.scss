@@ -10,7 +10,7 @@ html {
 
 @media #{$small-low} {
     html {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -39,11 +39,8 @@ p {
 }
 
 ai, i {
-    margin-left: .4rem;
-    margin-right: .4rem;
-    // &:after {
-    //     content: "\00a0";
-    // }
+    margin-left: .32rem;
+    margin-right: .32rem;
 }
 
 
@@ -185,6 +182,8 @@ tr:nth-child(even) {
             color: $prim5 !important;
         }
         i, ai {
+            margin-left: inherit;
+            margin-right: inherit;
             color: $prim4;
             &:hover {
                 color: $prim5;
@@ -197,7 +196,9 @@ tr:nth-child(even) {
 .social-media-banner {
     padding: .2rem 0rem .4rem 0rem;
     i, ai {
-        font-size: $ftsz3;
+        margin-left: inherit;
+        margin-right: inherit;
+        font-size: $ftsz4;
         color: $seco4;
     }
 }

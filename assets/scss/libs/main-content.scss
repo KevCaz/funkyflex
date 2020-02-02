@@ -95,7 +95,7 @@
     }
 
     .article-meta, .article-main, .listings {
-        padding: .2% 3% .2% 3%;
+        padding: 0% 3.2% 1% 3.2%;
     }
      
     .footnotes {
@@ -111,23 +111,18 @@
 
 .footer2 {
     display: none;
-    font-size: $ftsz6;
     @media #{$small-low} {
         display: block;
         width: 100%;
-        padding: 20px 0px 20px 0px;
+        padding: 2rem 0rem 2rem 0rem;
     }
     text-align: center;
     width: 100%;
     background-color: $prim2;
     color: $seco4;
-    ai, i {
-        color: inherit;
-    }
     button, a {
         color: inherit;
         text-decoration: none;
-        outline: 2;
         &:hover {
             color: $prim5;
         }
