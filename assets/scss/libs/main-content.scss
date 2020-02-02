@@ -4,7 +4,7 @@
     flex-flow: row wrap;
     background-color: $seco5;
     @media #{$large-low} {
-        width: 59%;
+        width: 60%;
     }
     @media #{$medium-low} {
         width: 70%;
@@ -106,28 +106,4 @@
         }
     }
 
-}
-
-
-.footer2 {
-    display: none;
-    @media #{$small-low} {
-        display: block;
-        width: 100%;
-        padding: 2rem 0rem 2rem 0rem;
-    }
-    text-align: center;
-    width: 100%;
-    background-color: $prim2;
-    color: $seco4;
-    button, a {
-        color: inherit;
-        text-decoration: none;
-        &:hover {
-            color: $prim5;
-        }
-    }
-    #hr-footer {
-        display: none;
-    }
 }
