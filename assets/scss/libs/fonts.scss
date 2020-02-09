@@ -17,3 +17,12 @@
       url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.woff') format('woff'),
       url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.ttf') format('truetype')
   }
+
+  // https://www.dafont.com/fr/komika-title.font
+  @font-face {
+    font-family: 'KOM';
+    src: url('/fonts/KOMIKAX.eot') format('embedded-opentype'),
+    url('/fonts/KOMIKAX.woff2') format('woff2'),
+    url('/fonts/KOMIKAX.woff') format('woff'),
+    url('/fonts/KOMIKAX.ttf') format('truetype')
+  }
