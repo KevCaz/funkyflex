@@ -15,6 +15,7 @@ html {
 }
 
 
+
 body {
     margin: 0rem;
     padding: 0rem;
@@ -37,6 +38,7 @@ p {
     font-weight: inherit;
     margin: 1.2rem 0rem .6rem 0rem;
 }
+
 
 ai, i {
     margin-left: .24rem;
@@ -119,10 +121,9 @@ kbd {
     }
 }
 
-
 li code, p code { 
     font-family: 'Fira Code', monospace;
-    font-size: .95rem;
+    font-size: .92em;
     color: $prim3;
     background-color: $thir5;
     padding-left: .3rem;
@@ -132,12 +133,13 @@ li code, p code {
 }
 
 .highlight {
-    line-height: 1.4;
+    line-height: 1.25;
     code {
-        margin-right: 2.4rem;
+        margin-right: 2.2rem;
+        font-size: $ftsz9;
     }
     pre {
-        margin: 1vh 0vh 1vh 0vh;
+        margin: .4rem 0rem .4rem 0rem;
     }
 }
 
