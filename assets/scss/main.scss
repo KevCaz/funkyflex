@@ -72,6 +72,21 @@ h6 {
     font-size: $ftsz7;
 }
 
+a img {
+    padding: inherit;
+    margin: inherit;
+}
+
+a {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+img, iframe, video { 
+    max-width: 100%; 
+    margin: .4rem 0rem .4rem 0rem;
+}
+
 
 #title  {
     padding: .4rem;
@@ -153,10 +168,6 @@ li code, p code {
 
 
 
-img, iframe, video { 
-    max-width: 100%; 
-    margin: .4rem 0rem .4rem 0rem;
-}
 
 /* Table */
 table {
