@@ -21,7 +21,7 @@
             {{ end }}
 
             {{ if $i }}<h2 id="current-dropdown">{{ else }}<h2>{{ end }}
-            <button onclick="dropDown('dropdown-{{  .Identifier }}')">{{ .Name | markdownify }}</button>
+            <a onclick="dropDown('dropdown-{{  .Identifier }}')" href="javascript:void(0)">{{ .Name | markdownify }}</a>
             </h2>
 
             {{ if $i }}
