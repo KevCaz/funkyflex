@@ -10,7 +10,7 @@ html {
 
 @media #{$small-low} {
     html {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -21,7 +21,7 @@ body {
     padding: 0rem;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.25;
     scroll-behavior: smooth;
 }
 
@@ -70,6 +70,13 @@ h5 {
 h6 {
     margin: 1rem 0vh .9rem 0rem;
     font-size: $ftsz7;
+}
+
+a code {
+    &:hover {
+        color: #d5ba9c;
+        background-color: #b95821;
+    }
 }
 
 a img {
