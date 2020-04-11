@@ -1,5 +1,5 @@
  <head>
-   <!-- title -->
+
    <title>{{ .Site.Title }}</title>
 
   {{ if or .Params.math .Site.Params.math }}
@@ -17,10 +17,15 @@
     <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
    {{ end }}
 
-  
+
   {{ range .Site.Params.custom_css }}
     <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
   {{ end }}
+
+
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
 
 
 
