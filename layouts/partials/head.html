@@ -23,9 +23,22 @@
   {{ end }}
 
 
-  {{ range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  <!-- xml -->
+  {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
+
+  <!-- og tags -->
+  <!-- https://github.com/onedrawingperday/hugo-test/blob/master/themes/1drawing/layouts/partials/head.html -->
+  {{ if .IsPage }}
+      <meta property="og:type" content="article">
+      <meta property="og:title" content="{{ .Site.Title }}"/>
+      <meta property="article:published_time" content="{{ .Date.Format "2006-01-02" }}">
+  {{ else }}
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="{{ .Site.Title }}"/>
+      <meta property="og:description" content="{{ .Site.Params.description }}"/>
+  {{ end }}
 
 
 
