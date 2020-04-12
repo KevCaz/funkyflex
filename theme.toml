@@ -11,7 +11,7 @@ min_version = "0.60"
 
 [author]
   name = "Kevin Cazelles"
-  homepage = ""
+  homepage = "https://kevcaz.github.io/"
 
 # If porting an existing theme
 [original]
