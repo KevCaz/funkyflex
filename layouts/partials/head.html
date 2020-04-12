@@ -45,11 +45,7 @@
      {{ with .Title }}
      <meta property="og:title" content="{{ . }}"/>
      {{ end }}
-     {{ with .Params.descriptionOG }}
-      <meta property="og:description" content="{{ . }}">
-     {{ end }}
    {{ end }}
-
 
    <!-- custom HEAD -->
    {{ partial "head_custom.html" . }}
