@@ -43,3 +43,7 @@
 {{ with .Site.Params.impactstory }}
 <a href="https://profiles.impactstory.org/u/{{ . }}"><i class='ai ai-impactstory-square'></i></a>
 {{ end }}
+{{ if .Site.Params.rss }}
+<a href="{{ print .Site.BaseURL "index.xml" }}"><i class="fas fa-rss-square"></i></a>
+{{ end }}
+
