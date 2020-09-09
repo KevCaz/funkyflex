@@ -144,7 +144,7 @@ kbd {
 }
 
 li code, p code {
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code', monospace ;
     font-size: .92em;
     color: $prim3;
     background-color: $thir5;
@@ -152,6 +152,10 @@ li code, p code {
     padding-right: .3rem;
     border-radius: .5rem;
     border: solid 1px $seco3;
+}
+
+tbody code {
+    font-family: 'Fira Code', monospace;
 }
 
 .highlight {
