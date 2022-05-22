@@ -1,10 +1,12 @@
 <hr id="hr-footer" align="left">
 <div class="social-media-banner">
-    {{ partial "media-social-banner.html" . }}    
+    {{ partial "media-social-banner.html" . }}
 </div>
 
 <div class="footer-custom">
     {{ .Site.Params.footer | markdownify }}
+    {{ .Site.Params.copyright | markdownify }}
+    {{ with .Site.Params.latestbuild }}
+      Latest build: {{ now.Format "02 Jan 06 15:04 MST"  }}
+    {{ end }}
 </div>
-
-
