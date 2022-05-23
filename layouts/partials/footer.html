@@ -5,8 +5,8 @@
 
 <div class="footer-custom">
     {{ .Site.Params.footer | markdownify }}
-    {{ .Site.Params.copyright | markdownify }}
+    {{ .Site.Params.copyright | markdownify }} <br>
     {{ with .Site.Params.latestbuild }}
-      Latest build: {{ now.Format "02 Jan 06 15:04 MST"  }}
+      Latest build: {{ now.Format "02 Jan 2006 15:04 MST"  }}
     {{ end }}
 </div>

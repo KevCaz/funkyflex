@@ -1,20 +1,14 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
-name = "Funkyflex"
+name = "funkyflex"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+description = "Minimal theme headerless with two navigation bars."
 homepage = "http://example.com/"
-tags = [minimal, fontawsome, headerless, light, sass]
-features = []
+tags = ["minimal", "fontawsome", "headerless", "light", "sass"]
+features = ["fontawsome", "double sided navbar"]
 min_version = "0.60"
 
 [author]
   name = "Kevin Cazelles"
   homepage = "https://kevcaz.github.io/"
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
