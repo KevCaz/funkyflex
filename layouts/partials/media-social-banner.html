@@ -16,6 +16,9 @@
 {{ with .Site.Params.twitter }}
 <a href="https://twitter.com/{{ . }}"><i class='fab fa-twitter-square'></i></a>
 {{ end }}
+{{ with .Site.Params.mastodon }}
+<a href="https://mastodon.social/{{ . }}"><i class='fab fa-mastodon'></i></a>
+{{ end }}
 {{ with .Site.Params.facebook }}
 <a href="https://www.facebook.com/public/{{ . }}"><i class='fab fa-facebook-square'></i></a>
 {{ end }}
