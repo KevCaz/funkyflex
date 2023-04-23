@@ -1,6 +1,6 @@
 // Font-size 
-$ftsz1: 2.8rem;
-$ftsz2: 2.2rem;
+$ftsz1: 2.6rem;
+$ftsz2: 2rem;
 $ftsz3: 1.8rem;
 $ftsz4: 1.6rem;
 $ftsz5: 1.4rem;
@@ -11,14 +11,25 @@ $ftsz9: .9rem;
 $ftsz10: .8rem;
 $ftsz11: .7rem;
 $ftsz12: .6rem;
- 
+
+// Margins
+$mrg1: 3rem;
+$mrg2: 2rem;
+$mrg3: 1.5rem;
+$mrg4: 1.25rem;
+$mrg5: 1rem; 
+$mrg6: 0.75rem; 
+$mrg7: 0.5rem;
+$mrg8: 0.25rem; 
+
 // Colors 
 // https://design-milk.com/color-palettes-inspired-hayao-miyazakis-films/
 $prim1: #665d60;
 $prim2: #0d122f; 
-$prim3: #b95821; 
+$prim3: #b4637a; 
 $prim4: #2b5297;
 $prim5: #d5ba9c;
+
 
 $seco3: lighten($prim3, 30);
 $seco4: lighten($prim4, 45);

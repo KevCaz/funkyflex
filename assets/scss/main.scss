@@ -32,7 +32,7 @@ body {
 }
 
 p {
-    font-size: $ftsz7;
+    font-size: $ftsz6;
     color: $prim2;
     font-family: inherit;
     font-weight: inherit;
@@ -48,27 +48,27 @@ ai, i {
 
 
 h1{
-    margin: 2.4rem 0rem 1.8rem 0rem;
+    margin: $mrg1 0rem 1.5rem 0rem;
     font-size: $ftsz2;
 }
 h2 {
-    margin: 2rem 0rem 1.4rem 0rem;
+    margin: 2rem 0rem 1.2rem 0rem;
     font-size: $ftsz3;
 }
 h3 {
-    margin: 1.8rem 0rem 1.2em 0rem;
+    margin: 1.8rem 0rem 1rem 0rem;
     font-size: $ftsz4;
 }
 h4 {
-    margin: 1.5rem 0vh 1.1em 0rem;
+    margin: 1.5rem 0vh 0.9rem 0rem;
     font-size: $ftsz5;
 }
 h5 {
-    margin: 1.2rem 0vh 1rem 0rem;
+    margin: 1.2rem 0vh 0.8rem 0rem;
     font-size: $ftsz6;
 }
 h6 {
-    margin: 1rem 0vh .9rem 0rem;
+    margin: 1rem 0vh .7rem 0rem;
     font-size: $ftsz7;
 }
 
@@ -145,27 +145,34 @@ kbd {
 
 li code, p code {
     font-family: 'Fira Code', monospace ;
-    font-size: .92em;
+    font-size:  $ftsz8;
     color: $prim3;
     background-color: $thir5;
     padding-left: .3rem;
     padding-right: .3rem;
-    border-radius: .5rem;
+    border-radius: .4rem;
     border: solid 1px $seco3;
 }
 
-tbody code {
+
+pre {
+    margin-top: $mrg8;
+    margin-bottom: $mrg8;
+    padding-right: $mrg6;
+}
+
+pre code {
     font-family: 'Fira Code', monospace;
+    font-size: $ftsz7;
+    margin-bottom: 0rem;
 }
 
 .highlight {
-    line-height: 1.25;
-    code {
-        margin-right: 2.2rem;
-        font-size: $ftsz9;
-    }
-    pre {
-        margin: .4rem 0rem .4rem 0rem;
+    padding-top: $mrg8;
+    line-height: $ftsz5;
+    pre code {
+        font-size: $ftsz7;
+        margin-bottom: 0rem;
     }
 }
 
