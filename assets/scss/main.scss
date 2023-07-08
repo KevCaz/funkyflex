@@ -145,7 +145,7 @@ kbd {
 
 li code, p code {
     font-family: 'Fira Code', monospace ;
-    font-size:  $ftsz8;
+    font-size: $ftsz8;
     color: $prim3;
     background-color: $thir5;
     padding-left: .3rem;
@@ -159,6 +159,7 @@ pre {
     margin-top: $mrg8;
     margin-bottom: $mrg8;
     padding-right: $mrg6;
+    font-size: $ftsz8;
 }
 
 pre code {
