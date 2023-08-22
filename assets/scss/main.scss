@@ -40,33 +40,39 @@ p {
 }
 
 
-ai, i {
+ai,
+i {
     margin-left: .24rem;
     margin-right: .24rem;
 }
 
 
 
-h1{
+h1 {
     margin: $mrg1 0rem 1.5rem 0rem;
     font-size: $ftsz2;
 }
+
 h2 {
     margin: 2rem 0rem 1.2rem 0rem;
     font-size: $ftsz3;
 }
+
 h3 {
     margin: 1.8rem 0rem 1rem 0rem;
     font-size: $ftsz4;
 }
+
 h4 {
     margin: 1.5rem 0vh 0.9rem 0rem;
     font-size: $ftsz5;
 }
+
 h5 {
     margin: 1.2rem 0vh 0.8rem 0rem;
     font-size: $ftsz6;
 }
+
 h6 {
     margin: 1rem 0vh .7rem 0rem;
     font-size: $ftsz7;
@@ -89,17 +95,20 @@ a {
     margin: 0rem;
 }
 
-img, iframe, video {
+img,
+iframe,
+video {
     max-width: 100%;
     margin: .4rem 0rem .4rem 0rem;
 }
 
 
-#title  {
+#title {
     padding: .4rem;
     text-align: center;
     font-family: "AMA";
     font-size: $ftsz1;
+
     code {
         font-family: "Fira Code", monospace;
         color: $prim3;
@@ -107,7 +116,7 @@ img, iframe, video {
 }
 
 blockquote {
-    border-left: solid .6rem $prim5;
+    border-left: solid .7rem $prim3;
     padding: .1rem .1rem .1rem 1rem;
     font-family: inherit;
     font-weight: 300;
@@ -120,7 +129,7 @@ mark {
 
 
 kbd {
-    font-family: "Fira Code", monospace;;
+    font-family: "Fira Code", monospace;
     color: $prim1;
     border-radius: 6px;
     padding-left: 3px;
@@ -133,6 +142,7 @@ kbd {
     background-color: $prim2;
     margin: .8rem 2rem .8rem 2em;
     height: 1.8rem;
+
     .ctt-progress-bar {
         height: 1.8rem;
         border: 0px;
@@ -143,8 +153,9 @@ kbd {
     }
 }
 
-li code, p code {
-    font-family: 'Fira Code', monospace ;
+li code,
+p code {
+    font-family: 'Fira Code', monospace;
     font-size: $ftsz8;
     color: $prim3;
     background-color: $thir5;
@@ -171,6 +182,9 @@ pre code {
 .highlight {
     padding-top: $mrg8;
     line-height: $ftsz5;
+    max-width: 100%;
+    overflow-x: auto;
+
     pre code {
         font-size: $ftsz7;
         margin-bottom: 0rem;
@@ -180,6 +194,7 @@ pre code {
 .social-media-banner {
     font-size: $ftsz6;
     margin-bottom: .6vh;
+
     a {
         color: $seco4;
     }
@@ -190,21 +205,27 @@ pre code {
 
 /* Table */
 table {
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-top: 3px solid $prim2;
-  border-bottom: 3px solid $prim2;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 3px solid $prim2;
+    border-bottom: 3px solid $prim2;
 }
-th, td {
+
+th,
+td {
     padding: .2rem;
 }
-thead, tfoot {
+
+thead,
+tfoot {
     background: $seco4;
 }
+
 th {
     border-bottom: 2px solid $prim2;
 }
+
 tr:nth-child(even) {
     background: $thir5;
 }
@@ -213,11 +234,15 @@ tr:nth-child(even) {
 .pubs {
     a {
         color: $prim4 !important;
+
         &:hover {
             color: $prim5 !important;
         }
-        i, ai {
+
+        i,
+        ai {
             color: $prim4;
+
             &:hover {
                 color: $prim5;
             }
@@ -230,18 +255,21 @@ tr:nth-child(even) {
     a {
         color: $prim5;
         text-decoration: none;
+
         &:hover {
             color: $prim1;
         }
     }
 }
 
-.footer  {
+.footer {
     padding: 5vh .5rem .5rem .8rem;
     font-size: $ftsz7;
+
     @media #{$small-low} {
         display: none;
     }
+
     #hr-footer {
         width: 40%;
         color: transparent;
@@ -257,11 +285,13 @@ tr:nth-child(even) {
     text-align: center;
     width: 100%;
     color: $seco4;
+
     @media #{$small-low} {
         display: block;
         width: 100%;
         padding: 1.4rem 0rem 1.4rem 0rem;
     }
+
     #hr-footer {
         display: none;
     }
@@ -271,11 +301,15 @@ tr:nth-child(even) {
 .social-media-banner {
     padding: .2rem 0rem .4rem 0rem;
     font-size: $ftsz3;
+
     a {
-        i, ai {
+
+        i,
+        ai {
             margin-left: 0rem;
             margin-right: .6rem;
             color: inherit;
+
             &:hover {
                 color: $prim5;
             }

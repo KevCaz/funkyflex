@@ -1,10 +1,14 @@
 .ctn-sidebar-secondary {
-    width: 15%;
+    width: 25%;
     display: flex;
     flex-flow: row wrap;
     background-color: $seco5;
     text-align: center;
     color: $prim2;
+
+    @media #{$large-low} {
+        width: 20%;
+    }
 
     @media #{$medium-low} {
         width: 100%;
@@ -14,23 +18,26 @@
 }
 
 .ctt-sidebar-secondary {
-    width: 15%;
     display: flex;
     flex-flow: row wrap;
     position: fixed;
+    align-self: center;
     top: 1rem;
-    right: 0;
     padding: 0rem;
 
     a {
         color: inherit;
         text-decoration: none;
+
         &:hover {
             color: $prim5;
         }
-        i, ai {
+
+        i,
+        ai {
             text-decoration: inherit;
             text-decoration-color: inherit;
+
             &:hover {
                 color: inherit;
             }
@@ -42,6 +49,7 @@
         margin: .4rem 0rem .2rem 0rem;
         width: 100%;
     }
+
     h2 {
         font-size: $ftsz7;
         margin: .2rem 0rem .14rem 0rem;
