@@ -2,11 +2,11 @@ name: Build demo website
 
 on:
   pull_request:
-    types:
-      - opened
+    branches:
+      - main
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
@@ -16,6 +16,6 @@ jobs:
       with:
         hugo-version: '0.113.0'
         extended: true
-    - name: Build
+    - name: Build demo website
       working-directory: exampleSite
       run: hugo --minify

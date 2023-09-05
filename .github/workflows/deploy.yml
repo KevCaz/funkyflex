@@ -16,12 +16,13 @@ jobs:
       with:
         hugo-version: '0.113.0'
         extended: true
-    - name: Build
-      working-directory: exampleSite
-      run: hugo --minify
+    - name: Build demo website
+      run: \
+        cd exampleSite
+        hugo --minify
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: master
+        publish_branch: gh-pages
         publish_dir: exampleSite/public
