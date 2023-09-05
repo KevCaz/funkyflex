@@ -1,0 +1,90 @@
+baseURL = "https://kevcaz.insileco.io/"
+title = "Funkyflex Theme"
+author = "Kevin Cazelles"
+languageCode = "en-us"
+ignoreErrors = ["error-remote-getjson"]
+copyright = "Copyright 2020-2023 Kevin Cazelles."
+footnotereturnlinkcontents = "<sup>^</sup>"
+enableEmoji = true
+pygmentsUseClasses = false
+
+# Default language to use (if you setup multilingual support)
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+
+[module]
+[module.imports]
+path = "github.com/KevCaz/funkyflex"
+
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "rose-pine-dawn"
+lineNos = true
+
+
+[params]
+authorname = "Kevin Cazelles"
+role = "Post-doctoral fellow in theoretical and computational ecology [@McCann Lab](https://mccannlab.ca/)"
+organization = "Department of Integrated Biology, University of Guelph"
+organization_url = "https://www.uoguelph.ca/ib/"
+github = "KevCaz"
+rss = true
+stackoverflow = "8038778"
+orcid = "0000-0001-6619-9874"
+researchgate = "Kevin_Cazelles"
+googlescholar = "xzvcu7cAAAAJ&hl"
+mastodon = "@KCazelles"
+
+# Date format (refer to Go's date format: http://flippinggodateformat.com )
+# Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+date_format = "Mon, Jan 2, 2006"
+footer = "Add your footer; "
+copyright = "Add your copyright."
+latestbuild = true
+
+# Link custom CSS and JS assets
+custom_css = []
+custom_js = []
+
+
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+identifier = "post"
+name = "Posts"
+url = "/posts/"
+weight = 2
+[[menu.main]]
+parent = "Documentation"
+name = "Overview"
+url = "/doc/overview"
+weight = 1
+[[menu.main]]
+parent = "Documentation"
+name = "Features"
+url = "/doc/features"
+weight = 2
+[[menu.main]]
+parent = "Documentation"
+name = "News"
+url = "/doc/news"
+weight = 2
+
+
+# Taxonomies
+[taxonomies]
+tag = "tags"
+
+# Languages
+# Create a [languages.X] block for each language you want, where X is the language ID.
+# Configure the English version of the website.
+[languages.en]
+languageCode = "en-us"
