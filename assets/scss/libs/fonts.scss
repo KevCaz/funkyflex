@@ -3,10 +3,10 @@
 @import url('https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css');
 
 // Font Awesome 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 // Academicons 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css');
+@import url('https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css');
 
 // Extra 
 // https://www.dafont.com/fr/avengeance-mightiest-avenger.font
@@ -16,13 +16,4 @@
       url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.woff2') format('woff2'),
       url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.woff') format('woff'),
       url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.ttf') format('truetype')
-  }
-
-  // https://www.dafont.com/fr/komika-title.font
-  @font-face {
-    font-family: 'KOM';
-    src: url('/fonts/KOMIKAX.eot') format('embedded-opentype'),
-    url('/fonts/KOMIKAX.woff2') format('woff2'),
-    url('/fonts/KOMIKAX.woff') format('woff'),
-    url('/fonts/KOMIKAX.ttf') format('truetype')
-  }
+}
