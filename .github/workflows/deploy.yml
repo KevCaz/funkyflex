@@ -20,9 +20,8 @@ jobs:
         hugo-version: '0.113.0'
         extended: true
     - name: Build demo website
-      run: \
-        cd exampleSite
-        hugo --minify
+      working-directory: exampleSite
+      run: hugo --minify
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
