@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://kevcaz.insileco.io/funkyflex'
 languageCode = 'en-US'
-title = 'My New Hugo Site'
+title = 'Funkyflex Theme'
 
 [[menus.main]]
 name = 'Home'
