@@ -32,6 +32,7 @@
 
 .ctt-sidebar-primary {
     width: 100%;
+    padding: 8px;
 
     @media #{$small-low} {
         h1 {
@@ -44,15 +45,16 @@
         }
     }
 
+
     h1 {
-        font-family: 'Bangers', cursive;
-        margin-bottom: 1.2rem;
-        padding-top: .4rem;
-        //letter-spacing: 0.1em;
+        font-family: "Bangers";
+        margin: 2rem 0rem 2rem 0rem;
+        margin-bottom: 1rem;
+        padding-top: .5rem;
     }
 
     h2 {
-        margin-top: 1.4rem;
+        margin-top: 1.2rem;
         margin-bottom: 1rem;
         font-size: $ftsz4;
     }
@@ -67,9 +69,7 @@
     h1,
     h2,
     h3 {
-
-        i,
-        ai {
+        i {
             color: $prim5;
         }
     }

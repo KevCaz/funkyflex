@@ -15,7 +15,6 @@ html {
 }
 
 
-
 body {
     margin: 0rem;
     padding: 0rem;
@@ -37,13 +36,6 @@ p {
     font-family: inherit;
     font-weight: inherit;
     margin: 1.2rem 0rem .6rem 0rem;
-}
-
-
-ai,
-i {
-    margin-left: .24rem;
-    margin-right: .24rem;
 }
 
 
@@ -103,12 +95,10 @@ video {
 }
 
 
-#title {
+.title {
     padding: .4rem;
     text-align: center;
-    // font-family: 'Joti One', cursive;
-    // font-family: 'Kranky', cursive;
-    font-family: 'Acme', sans-serif;
+    font-family: "Bangers";
     font-size: $ftsz1;
 
     code {

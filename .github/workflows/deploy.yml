@@ -1,4 +1,4 @@
-name: Build demo website
+name: Build and deploy demo website
 
 on:
   push:
@@ -17,14 +17,13 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: '0.113.0'
+        hugo-version: '0.120.0'
         extended: true
     - name: Build demo website
-      working-directory: exampleSite
       run: hugo --minify
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
-        publish_dir: exampleSite/public
+        publish_dir: public

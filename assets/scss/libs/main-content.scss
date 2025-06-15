@@ -19,6 +19,7 @@
         min-height: 88vh;
         padding: 0rem;
     }
+
 }
 
 .ctt-main-content {
@@ -59,7 +60,7 @@
         }
 
         ol li::marker {
-            font-family: 'Bangers', cursive;
+            font-family: "Bangers";
             font-size: $ftsz7;
             color: $prim3;
         }
@@ -81,7 +82,7 @@
     }
 
     .article-meta {
-        #title h1 {
+        h1 {
             margin: 1.2rem 0rem 1.2rem 0rem;
         }
 

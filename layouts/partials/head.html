@@ -7,7 +7,7 @@
   {{ end }}
 
    <!-- main.scss see https://jamstatic.fr/2018/07/21/hugo-asset-pipeline/ -->
-   {{ if .Site.IsServer }}
+   {{ if hugo.IsServer }}
     {{ $opts := (dict "targetPath" "css/main.css" "enableSourceMap" true) }}
     {{ $styles := resources.Get "scss/main.scss" | toCSS $opts }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">

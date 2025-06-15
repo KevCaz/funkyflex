@@ -2,24 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css');
 
-// Font Awesome 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+//
 
-// Academicons 
-@import url('https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css');
+// Font Awesome 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
 
 // Bangers 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-// Extra 
-// https://www.dafont.com/fr/avengeance-mightiest-avenger.font
-@font-face {
-    font-family: 'AMA';
-    src: url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.eot') format('embedded-opentype'),
-      url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.woff') format('woff'),
-      url('/fonts/AVENGEANCE_MIGHTIEST_AVENGER.ttf') format('truetype')
+
+.bangers-regular {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
