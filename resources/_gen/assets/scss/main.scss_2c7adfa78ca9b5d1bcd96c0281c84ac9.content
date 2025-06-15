@@ -2,11 +2,6 @@
 @import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
-.bangers-regular {
-  font-family: "Bangers", system-ui;
-  font-weight: 400;
-  font-style: normal; }
-
 .ctn-sidebar-primary {
   display: flex;
   position: -webkit-sticky;
@@ -59,7 +54,6 @@
   .ctt-sidebar-primary h3 i {
     color: #d5ba9c; }
   .ctt-sidebar-primary button {
-    font: inherit;
     background-color: inherit;
     color: #665d60;
     border: 0px;
@@ -93,13 +87,13 @@
   .ctt-sidebar-primary #current {
     color: #d5ba9c; }
     .ctt-sidebar-primary #current:after {
-      font-family: "Font Awesome 5 Free";
+      font-family: "Font Awesome 6 Free";
       content: "\f0a5";
       padding-left: .8rem; }
   .ctt-sidebar-primary #current-dropdown {
     color: #d5ba9c; }
     .ctt-sidebar-primary #current-dropdown:after {
-      font-family: "Font Awesome 5 Free";
+      font-family: "Font Awesome 6 Free";
       content: "\f0a7";
       padding-left: .8rem; }
 
@@ -241,7 +235,7 @@ html {
 body {
   margin: 0rem;
   padding: 0rem;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   line-height: 1.25;
   scroll-behavior: smooth; }
@@ -342,7 +336,7 @@ kbd {
 
 li code,
 p code {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   font-size: 1rem;
   color: #b4637a;
   background-color: #f6edef;
@@ -358,7 +352,7 @@ pre {
   font-size: 1rem; }
 
 pre code {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   font-size: 1.1rem;
   margin-bottom: 0rem; }
 

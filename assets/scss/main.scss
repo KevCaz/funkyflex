@@ -18,7 +18,7 @@ html {
 body {
     margin: 0rem;
     padding: 0rem;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: $ftfatx;
     font-weight: 400;
     line-height: 1.25;
     scroll-behavior: smooth;
@@ -98,11 +98,11 @@ video {
 .title {
     padding: .4rem;
     text-align: center;
-    font-family: "Bangers";
+    font-family: $ftfati;
     font-size: $ftsz1;
 
     code {
-        font-family: "Fira Code", monospace;
+        font-family: $ftfaco;
         color: $prim3;
     }
 }
@@ -121,7 +121,7 @@ mark {
 
 
 kbd {
-    font-family: "Fira Code", monospace;
+    font-family: $ftfaco;
     color: $prim1;
     border-radius: 6px;
     padding-left: 3px;
@@ -147,7 +147,7 @@ kbd {
 
 li code,
 p code {
-    font-family: 'Fira Code', monospace;
+    font-family: $ftfaco;
     font-size: $ftsz8;
     color: $prim3;
     background-color: $thir5;
@@ -166,7 +166,7 @@ pre {
 }
 
 pre code {
-    font-family: 'Fira Code', monospace;
+    font-family: $ftfaco;
     font-size: $ftsz7;
     margin-bottom: 0rem;
 }

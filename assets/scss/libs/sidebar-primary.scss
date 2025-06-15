@@ -47,7 +47,7 @@
 
 
     h1 {
-        font-family: "Bangers";
+        font-family: $ftfati;
         margin: 2rem 0rem 2rem 0rem;
         margin-bottom: 1rem;
         padding-top: .5rem;
@@ -75,7 +75,6 @@
     }
 
     button {
-        font: inherit;
         background-color: inherit;
         color: $prim1;
         border: 0px;
@@ -126,7 +125,7 @@
         color: $prim5;
 
         &:after {
-            font-family: "Font Awesome 5 Free";
+            font-family: "Font Awesome 6 Free";
             content: "\f0a5";
             padding-left: .8rem;
         }
@@ -136,7 +135,7 @@
         color: $prim5;
 
         &:after {
-            font-family: "Font Awesome 5 Free";
+            font-family: "Font Awesome 6 Free";
             content: "\f0a7";
             padding-left: .8rem;
         }
