@@ -1,53 +1,59 @@
- <head>
+<head>
 
-   <title>{{ .Site.Title }}</title>
+  <title>{{ .Site.Title }}</title>
 
   {{ if or .Params.math .Site.Params.math }}
-    {{ partial "math.html" . }}
+  {{ partial "math.html" . }}
   {{ end }}
 
-   <!-- main.scss see https://jamstatic.fr/2018/07/21/hugo-asset-pipeline/ -->
-   {{ if hugo.IsServer }}
-    {{ $opts := (dict "targetPath" "css/main.css" "enableSourceMap" true) }}
-    {{ $styles := resources.Get "scss/main.scss" | toCSS $opts }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-   {{ else }}
-    {{ $opts := (dict "targetPath" "css/main.css") }}
-    {{ $styles := resources.Get "scss/main.scss" | toCSS $opts | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-   {{ end }}
+  <!-- main.scss see https://jamstatic.fr/2018/07/21/hugo-asset-pipeline/ -->
+  {{ if hugo.IsServer }}
+  {{ $opts := (dict "targetPath" "css/main.css" "enableSourceMap" true) }}
+  {{ $styles := resources.Get "scss/main.scss" | toCSS $opts }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  {{ else }}
+  {{ $opts := (dict "targetPath" "css/main.css") }}
+  {{ $styles := resources.Get "scss/main.scss" | toCSS $opts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  {{ end }}
 
+  
+  <!-- Custom CSS -->
   {{ range .Site.Params.custom_css }}
-    <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
+  <link rel="stylesheet" href="{{ " /css/" | relURL }}{{ . }}">
   {{ end }}
+
+  <!-- Custom JS -->
+  {{ partial "js.html" . }}
 
 
   <!-- xml -->
   {{ with .OutputFormats.Get "rss" -}}
-      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ printf `
+  <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
 
 
   <!-- META -->
   {{ with .Site.Params.authorname }}
-    <meta name="author" content="{{ . }}" />
+  <meta name="author" content="{{ . }}" />
   {{ end }}
   {{ with .Site.Params.organization }}
-    <meta name="institution" content="{{ . }}" />
+  <meta name="institution" content="{{ . }}" />
   {{ end }}
   {{ with .Params.tags }}
-    <meta name="news_keywords" content="{{ . }}"/>
-   {{ end }}
+  <meta name="news_keywords" content="{{ . }}" />
+  {{ end }}
 
-   <!-- OG -->
-   <meta property="og:site_name" content="{{ .Site.Title }}"/>
-   {{ if .IsPage }}
-     {{ with .Title }}
-     <meta property="og:title" content="{{ . }}"/>
-     {{ end }}
-   {{ end }}
+  <!-- OG -->
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  {{ if .IsPage }}
+  {{ with .Title }}
+  <meta property="og:title" content="{{ . }}" />
+  {{ end }}
+  {{ end }}
 
-   <!-- custom HEAD -->
-   {{ partial "head_custom.html" . }}
+  <!-- custom HEAD -->
+  {{ partial "head_custom.html" . }}
 
- </head>
+</head>

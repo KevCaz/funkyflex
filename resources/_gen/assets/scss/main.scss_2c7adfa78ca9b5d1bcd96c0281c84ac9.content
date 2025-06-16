@@ -74,7 +74,7 @@
   .ctt-sidebar-primary .dropdown {
     width: 100%;
     display: none; }
-  .ctt-sidebar-primary .dropdown-cuurent {
+  .ctt-sidebar-primary .dropdown-current {
     width: 100%;
     display: block; }
   .ctt-sidebar-primary .primary-sidebar-menu {
