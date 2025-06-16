@@ -3,6 +3,11 @@
 [![Build demo website](https://github.com/KevCaz/funkyflex/actions/workflows/deploy.yml/badge.svg)](https://github.com/KevCaz/funkyflex/actions/workflows/deploy.yml)
 
 
+# Features 
+
+- ✍️ [Katex](https://github.com/KaTeX/KaTeX) v0.16.22
+- ✍️ [Fontawesome](https://fontawesome.com/) v6.7.2
+
 <!-- - fonts: 
     - [avengeance-mightiest-avenger](https://www.dafont.com/fr/avengeance-mightiest-avenger.font) (files are included)
     - [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)

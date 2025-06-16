@@ -5,6 +5,8 @@
     align-self: flex-start;
     top: 0px;
     flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
 
     width: 20%;
     background-color: $prim2;
@@ -22,7 +24,7 @@
     @media #{$small-low} {
         width: 100%;
         text-align: center;
-        min-height: 12vh;
+        min-height: 10vh;
         display: flex;
         flex-direction: column;
     }
@@ -32,7 +34,7 @@
 
 .ctt-sidebar-primary {
     width: 100%;
-    padding: 8px;
+    padding: 0.75rem;
 
     @media #{$small-low} {
         h1 {
@@ -125,7 +127,7 @@
         color: $prim5;
 
         &:after {
-            font-family: "Font Awesome 6 Free";
+            font-family: $ftfawe;
             content: "\f0a5";
             padding-left: .8rem;
         }
@@ -135,7 +137,7 @@
         color: $prim5;
 
         &:after {
-            font-family: "Font Awesome 6 Free";
+            font-family: $ftfawe;
             content: "\f0a7";
             padding-left: .8rem;
         }

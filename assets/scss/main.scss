@@ -4,23 +4,23 @@
 @import "libs/sidebar-secondary.scss";
 @import "libs/main-content.scss";
 
+
 html {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 @media #{$small-low} {
     html {
-        font-size: 1.25rem;
+        font-size: 18px;
     }
 }
-
 
 body {
     margin: 0rem;
     padding: 0rem;
     font-family: $ftfatx;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.2;
     scroll-behavior: smooth;
 }
 
