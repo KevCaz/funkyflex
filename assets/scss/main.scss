@@ -5,7 +5,7 @@
 @import "libs/main-content.scss";
 
 html {
-    font-size: 16px;
+    font-size: 100%;
 }
 
 @media #{$small-low} {
@@ -15,8 +15,8 @@ html {
 }
 
 body {
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0px;
+    padding: 0px;
     font-family: $ftfatx;
     font-weight: 400;
     line-height: 1.2;

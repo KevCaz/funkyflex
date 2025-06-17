@@ -32,11 +32,14 @@
   width: 100%;
   padding: 0.75rem; }
   @media only screen and (max-width: 1200px) {
-    .ctt-sidebar-primary h1 {
-      margin: 1rem 0rem 1rem 0rem;
-      font-size: 2.6rem; }
-    .ctt-sidebar-primary .primary-sidebar-menu {
-      display: none; } }
+    .ctt-sidebar-primary {
+      padding: 0rem;
+      margin: 0rem; }
+      .ctt-sidebar-primary h1 {
+        margin: 1rem 0rem 1rem 0rem;
+        font-size: 2.6rem; }
+      .ctt-sidebar-primary .primary-sidebar-menu {
+        display: none; } }
   .ctt-sidebar-primary h1 {
     font-family: "Bangers";
     margin: 2rem 0rem 2rem 0rem;
@@ -225,15 +228,15 @@
       font-size: 0.9rem; }
 
 html {
-  font-size: 16px; }
+  font-size: 100%; }
 
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 18px; } }
 
 body {
-  margin: 0rem;
-  padding: 0rem;
+  margin: 0px;
+  padding: 0px;
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   line-height: 1.2;
