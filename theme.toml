@@ -10,7 +10,7 @@ homepage = 'https://github.com/KevCaz/funkyflex'
 demosite = 'https://kevcaz.insileco.io/funkyflex/'
 
 # Taxonomy terms
-tags = ['blog', 'minimal', 'fontawsome', 'headerless', 'light', 'sass']
+tags = ['blog', 'minimal', 'fontawesome', 'headerless', 'light', 'sass']
 features = ['fontawesome', 'double-sided navbar']
 
 

@@ -27,9 +27,11 @@
     margin-bottom: 1rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+    width: 100%;
 
     @media #{$small-low} {
         flex: 1 0 auto;
+        width: auto;
     }
 
     a {
@@ -41,10 +43,11 @@
         }
     }
 
-
     .listings {
         font-weight: 400;
         color: $prim2;
+        margin-top: 2rem;
+
 
         .date {
             color: $prim1;
@@ -52,13 +55,13 @@
         }
 
         ol li {
-            font-size: $ftsz7;
+            font-size: $ftsz6;
             padding: .1rem;
         }
 
         ol li::marker {
             font-family: $ftfati;
-            font-size: $ftsz7;
+            font-size: $ftsz6;
             color: $prim3;
         }
 
@@ -79,9 +82,9 @@
     }
 
     .article-meta {
-
         text-align: center;
-        margin-bottom: .8rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
 
         h1 {
             margin: 1rem 0rem 0.75rem 0rem;
@@ -91,9 +94,9 @@
             margin: 0.5rem 0rem 0.25rem 0rem;
         }
 
-                h4 {
-                    margin: 0.5rem 0rem 0.25rem 0rem;
-                }
+        h4 {
+            margin: 0.5rem 0rem 0.25rem 0rem;
+        }
 
 
         .tags {

@@ -1,52 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-{{ partial "head.html" . }}
+{{ define "main" }}
 
-<body>
-    {{ partial "header.html" . }}
-    
-    <div class="page">
+<div class="article-meta">
+    <h1 class="title">{{ .Title | markdownify }}</h1>
+</div>
 
-        <div class="ctn-sidebar-primary">
-            <div class="ctt-sidebar-primary">
-                {{ partial "sidebar-primary.html" . }}
 
-                <div class="footer">
-                    {{ partial "footer.html" . }}
-                </div>
+<div class="article-main">
+    {{ .Content }}
+</div>
 
-            </div>
-        </div>
 
-        <div class="ctn-main-content">
-
-            <div class="ctt-main-content">
-                <h1 class="title">{{ .Title }}</h1>
-
-                <div class="ctt-main-content">
-                     <div class="article-main">        
-                        {{ .Content }}
-                    </div>
-                </div>
-   
-
-            </div>
-
-            <div class="footer2">
-                {{ partial "footer.html" . }}
-            </div>
-
-        </div>
-
-        <div class="ctn-sidebar-secondary">
-            <div class="ctt-sidebar-secondary">
-                {{ partial "sidebar-secondary.html" . }}
-            </div>
-        </div>
-
-    </div>
-
-    
-</body>
-
-</html>
+{{ end }}

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 .ctn-sidebar-primary {
   display: flex;
   position: -webkit-sticky;
@@ -9,8 +9,8 @@
   align-self: flex-start;
   top: 0px;
   flex-flow: row wrap;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   width: 20%;
   background-color: #0d122f;
   min-height: 100vh;
@@ -167,10 +167,12 @@
   color: #0d122f;
   margin-bottom: 1rem;
   padding-left: 1.25rem;
-  padding-right: 1.25rem; }
+  padding-right: 1.25rem;
+  width: 100%; }
   @media only screen and (max-width: 1200px) {
     .ctt-main-content {
-      flex: 1 0 auto; } }
+      flex: 1 0 auto;
+      width: auto; } }
   .ctt-main-content a {
     color: #5883d0;
     text-decoration: none; }
@@ -178,16 +180,17 @@
       color: #d5ba9c; }
   .ctt-main-content .listings {
     font-weight: 400;
-    color: #0d122f; }
+    color: #0d122f;
+    margin-top: 2rem; }
     .ctt-main-content .listings .date {
       color: #665d60;
       font-size: 0.8rem; }
     .ctt-main-content .listings ol li {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       padding: .1rem; }
     .ctt-main-content .listings ol li::marker {
       font-family: "Bangers";
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: #b4637a; }
     .ctt-main-content .listings ul {
       list-style-type: none; }
@@ -199,7 +202,8 @@
         color: #d5ba9c; }
   .ctt-main-content .article-meta {
     text-align: center;
-    margin-bottom: .8rem; }
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
     .ctt-main-content .article-meta h1 {
       margin: 1rem 0rem 0.75rem 0rem; }
     .ctt-main-content .article-meta h2 {
