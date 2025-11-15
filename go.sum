@@ -1,0 +1,6 @@
+github.com/KaTeX/KaTeX v0.16.22 h1:+CyvN/2mDtqLjGeKRHft2+tQfIgQcc5aWigKHx0egWo=
+github.com/KaTeX/KaTeX v0.16.22/go.mod h1:VI+aE+CVs/VqtbHnuhstfQST46GmrwpXH7LQAzYIouw=
+github.com/hugomods/katex v0.2.0 h1:h5hG0vnyL6dMzNiLeNMXb+VPwseZXoTORjzV6e6YgJw=
+github.com/hugomods/katex v0.2.0/go.mod h1:8wO7jRjPT+M6UeipsJ0Hpah4LjWU9P6V5CO0eEKvL8U=
+github.com/hugomods/katex v0.3.6 h1:Xl7ruiXuwvEGlz3H02w24B0zRGtHcL4sMc11Ke/aMFE=
+github.com/hugomods/katex v0.3.6/go.mod h1:6ACkMfCEOjLIRwcbS33Yji29C113+zGdBF/5oMfWfZI=

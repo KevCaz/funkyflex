@@ -1,4 +1,4 @@
 .hugo_build.lock
 .vscode
-
-public/
+public
+_gen

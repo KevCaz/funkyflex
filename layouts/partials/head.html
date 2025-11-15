@@ -6,16 +6,16 @@
   {{ partial "math.html" . }}
   {{ end }}
 
-  <!-- main.scss see https://jamstatic.fr/2018/07/21/hugo-asset-pipeline/ -->
-  {{ if hugo.IsServer }}
-  {{ $opts := (dict "targetPath" "css/main.css" "enableSourceMap" true) }}
-  {{ $styles := resources.Get "scss/main.scss" | toCSS $opts }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-  {{ else }}
-  {{ $opts := (dict "targetPath" "css/main.css") }}
-  {{ $styles := resources.Get "scss/main.scss" | toCSS $opts | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-  {{ end }}
+   <!-- main.scss see https://jamstatic.fr/2018/07/21/hugo-asset-pipeline/ -->
+   {{ if hugo.IsServer }}
+    {{ $opts := (dict "targetPath" "css/main.css" "enableSourceMap" true) }}
+    {{ $styles := resources.Get "scss/main.scss" | toCSS $opts }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+   {{ else }}
+    {{ $opts := (dict "targetPath" "css/main.css") }}
+    {{ $styles := resources.Get "scss/main.scss" | toCSS $opts | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+   {{ end }}
 
   
   <!-- Custom CSS -->
